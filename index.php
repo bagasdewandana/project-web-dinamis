@@ -55,7 +55,7 @@
         <div class="max-content">
           <div class="col-lg-12">
             <div class="statement">
-              <h1>Sifat Kami</h1>
+              <h1>Sifat Kami Bersama</h1>
               <div class="col-lg-4 animatedParent">
                 <div class="c-statement">
                  <i class="fas fa-child"></i>
