@@ -4,6 +4,7 @@
 	$query_uangkas = $koneksi->query("SELECT * FROM tb_uangkas as a INNER JOIN tb_siswa as b ON a.id_siswa = b.id_siswa WHERE a.id_bulan = $id_bulan");
 	$data_uangkas = $query_uangkas->fetch_assoc();
 	$bulan = $data_uangkas['id_bulan'];
+	$month = $data_uangkas['id_bulan'];
 	if ($bulan == 1) {
 		$bulan = "Januari";
 	}
@@ -323,7 +324,34 @@ var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-			labels: ['0','January'],
+			labels: [
+				<?php
+					$query_date = $koneksi->query("SELECT * FROM tb_uangkas WHERE id_bulan=$month");
+					
+						$temp = [];
+						$temp2 = [];
+					for($i=1;$i<=31;$i++){
+						while($data_date = $query_date->fetch_assoc()){
+							$date_uangkas = intval(date("d",strtotime($data_date['date_uangkas'])));
+							array_push($temp, $date_uangkas);
+							$month_uangkas = intval(date("m", strtotime($data_date['date_uangkas'])));
+							$query_check_date = $koneksi->query("SELECT * FROM tb_uangkas WHERE date_uangkas LIKE '%".intval($month_uangkas)."-".intval($date_uangkas)."%'");
+							$data_check_date = $query_check_date->fetch_assoc();
+
+						}
+
+					}
+					foreach(array_unique($temp) as $date){
+						array_push($temp2,$date);
+					}
+					for($i=1;$i<=count($temp2);$i++){
+						echo $temp2[$i-1];
+						if($i < count($temp2)){
+							echo ",";
+						}
+					}
+				?>
+			],
 			datasets: [{
 				/* data uang kas yang didapat */
 				label: 'Yang Didapat',
@@ -333,7 +361,7 @@ var myChart = new Chart(ctx, {
 				data: [0 ,
 					<?php
 						$bulan = 1;
-							$query_total_kas = $koneksi->query("SELECT SUM(jumlah) as total FROM tb_uangkas WHERE id_bulan=$bulan");
+							$query_total_kas = $koneksi->query("SELECT SUM(jumlah) as total FROM tb_uangkas WHERE id_bulan=$month");
 							$data_total_kas = $query_total_kas->fetch_assoc();
 							if(is_numeric($data_total_kas['total'])){
 								echo $data_total_kas['total'];
