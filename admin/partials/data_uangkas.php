@@ -1,5 +1,6 @@
 <?php 
 	require_once '../koneksi/koneksi.php';
+
  ?>
 
 <h1>Data Uang Kas</h1>
@@ -350,7 +351,7 @@ var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','Desember'],
 			datasets: [{
 				/* data uang kas yang didapat */
 				label: 'Unfilled',
@@ -358,7 +359,23 @@ var myChart = new Chart(ctx, {
 				backgroundColor: window.chartColors.blue,
 				borderColor: window.chartColors.blue,
 				data: [
-					250, 500, 750, 1000, 1200, 1300, 1500
+					<?php
+						$bulan = 1;
+						while($bulan <= 12){
+							$query_total_kas = $koneksi->query("SELECT SUM(jumlah) as total FROM tb_uangkas WHERE id_bulan=$bulan");
+							$data_total_kas = $query_total_kas->fetch_assoc();
+							if(is_numeric($data_total_kas['total'])){
+								echo $data_total_kas['total'];
+							}
+							else{
+								echo "0";
+							}
+							if($bulan < 12){
+								echo ",";
+							}
+							$bulan++;
+						}
+					?>
 				],
 			}, {
 				/* expect */
@@ -368,7 +385,23 @@ var myChart = new Chart(ctx, {
 				borderColor: window.chartColors.green,
 				borderDash: [5, 5],
 				data: [
-					300,600,900,1200,1500,1800,2100
+					<?php
+						$bulan = 1;
+						while($bulan <= 12){
+							$query_expect = $koneksi->query("SELECT count(id_siswa) as total FROM tb_siswa");
+							$data_expect = $query_expect->fetch_assoc();
+							if(is_numeric($data_expect['total']) && $data_expect['total'] > 0){
+								echo (($data_expect['total'] * 10000) * $bulan);
+							}
+							else{
+								echo "0";
+							}
+							if($bulan < 12){
+								echo ",";
+							}
+							$bulan++;
+						}
+					?>
 				],
 			}, {
 				/* pengeluaran */
