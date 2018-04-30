@@ -13,6 +13,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+	<script type="text/javascript" src="js/chart.js"></script>
 	<title>Dashboard</title>
 </head>
 <body>

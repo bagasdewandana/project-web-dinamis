@@ -63,7 +63,7 @@
 													if ($query_check->num_rows == 0) {
 														if ($password == $repeat_password) {
 															$password_hash = password_hash($password, PASSWORD_BCRYPT, array('cost'=>11));
-															$query_add = $koneksi->query("INSERT INTO tb_user VALUES (NULL, '$email_user', '$username', '$password_hash', 'Admin')");
+															$query_add = $koneksi->query("INSERT INTO tb_user VALUES (NULL, '$email_user', '$username', '$password_hash', 'Member')");
 															if ($query_add) {
 																echo "<script>alert('Berhasil Membuat Akun');location.href='login.php'</script>";
 															}

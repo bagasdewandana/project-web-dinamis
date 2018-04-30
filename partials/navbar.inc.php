@@ -47,7 +47,7 @@
 								if (isset($_SESSION['user_login'])) {
 									?>
 									<li><a href="logout.php">Log Out</a><div class="garis"></div></li>
-									<li><a href="#"><?= $_SESSION['user_login']['username'] ?></a><div class="garis"></div></li>
+									<li><a href="member/index.php"><?= $_SESSION['user_login']['username'] ?></a><div class="garis"></div></li>
 									<li><a href="#">Tugas</a><div class="garis"></div></li>
 									<?php
 								}
