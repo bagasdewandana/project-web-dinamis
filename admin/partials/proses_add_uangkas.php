@@ -6,7 +6,7 @@
 		$id_bulan = $_POST['id_bulan'];
 		$query_check = $koneksi->query("SELECT * FROM tb_uangkas WHERE id_siswa = $id_siswa AND id_bulan = $id_bulan");
 		if ($query_check->num_rows == 0) {
-			$total = 5000;
+			$total = 10000;
 			$date = date('Y-m-d H:i:s');
 
 			$query_add = $koneksi->query("INSERT INTO tb_uangkas VALUES (NULL, $id_siswa, $id_bulan, $total, '$date')");

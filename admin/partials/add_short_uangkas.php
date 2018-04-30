@@ -2,7 +2,7 @@
 	require_once '../koneksi/koneksi.php';
 	$id_siswa = $_GET['id_siswa'];
 	$id_bulan = $_GET['id_bulan'];
-	$jumlah = 5000;
+	$jumlah = 10000;
 	$date = date('Y-m-d H:i:s');
 
 	$query_check = $koneksi->query("SELECT * FROM tb_uangkas WHERE id_siswa = $id_siswa AND id_bulan = $id_bulan");

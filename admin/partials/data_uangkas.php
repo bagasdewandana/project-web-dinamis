@@ -20,7 +20,7 @@
 		$query_uangkas = $koneksi->query("SELECT * FROM tb_uangkas as a INNER JOIN tb_siswa as b ON a.id_siswa = b.id_siswa ORDER BY a.id_bulan ASC");
 		if ($query_uangkas->num_rows > 0) {
 			$no = 1;
-			$total_uangkas = 500000;
+			$total_uangkas = 539000;
 			while ($data_uangkas = $query_uangkas->fetch_assoc()) {
 				$bulan = $data_uangkas['id_bulan'];
 				$id_bulan = $data_uangkas['id_bulan'];

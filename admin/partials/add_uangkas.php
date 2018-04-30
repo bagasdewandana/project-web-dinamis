@@ -5,7 +5,7 @@
 		<label>Nama Siswa</label>
 		<select name="id_siswa">
 			<?php 
-				$query_siswa = $koneksi->query("SELECT * FROM tb_siswa");
+				$query_siswa = $koneksi->query("SELECT * FROM tb_siswa ORDER BY nama_siswa ASC");
 				if ($query_siswa->num_rows > 0) {
 					while($data_siswa = $query_siswa->fetch_assoc()){
 						?>
