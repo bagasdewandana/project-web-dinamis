@@ -4,6 +4,7 @@
 	$query_uangkas = $koneksi->query("SELECT * FROM tb_uangkas as a INNER JOIN tb_siswa as b ON a.id_siswa = b.id_siswa WHERE a.id_bulan = $id_bulan");
 	$data_uangkas = $query_uangkas->fetch_assoc();
 	$bulan = $data_uangkas['id_bulan'];
+	$month = $data_uangkas['id_bulan'];
 	if ($bulan == 1) {
 		$bulan = "Januari";
 	}
@@ -170,3 +171,272 @@
 		}
 	 ?>
 </table>
+<canvas id="myChart"></canvas>
+<script>
+'use strict';
+
+window.chartColors = {
+	red: 'rgb(255, 99, 132)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(54, 162, 235)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(201, 203, 207)'
+};
+
+(function(global) {
+	var Months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December'
+	];
+
+	var COLORS = [
+		'#4dc9f6',
+		'#f67019',
+		'#f53794',
+		'#537bc4',
+		'#acc236',
+		'#166a8f',
+		'#00a950',
+		'#58595b',
+		'#8549ba'
+	];
+
+	var Samples = global.Samples || (global.Samples = {});
+	var Color = global.Color;
+
+	Samples.utils = {
+		// Adapted from http://indiegamr.com/generate-repeatable-random-numbers-in-js/
+		srand: function(seed) {
+			this._seed = seed;
+		},
+
+		rand: function(min, max) {
+			var seed = this._seed;
+			min = min === undefined ? 0 : min;
+			max = max === undefined ? 1 : max;
+			this._seed = (seed * 9301 + 49297) % 233280;
+			return min + (this._seed / 233280) * (max - min);
+		},
+
+		numbers: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 1;
+			var from = cfg.from || [];
+			var count = cfg.count || 8;
+			var decimals = cfg.decimals || 8;
+			var continuity = cfg.continuity || 1;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var data = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = (from[i] || 0) + this.rand(min, max);
+				if (this.rand() <= continuity) {
+					data.push(Math.round(dfactor * value) / dfactor);
+				} else {
+					data.push(null);
+				}
+			}
+
+			return data;
+		},
+
+		labels: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 100;
+			var count = cfg.count || 8;
+			var step = (max - min) / count;
+			var decimals = cfg.decimals || 8;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var prefix = cfg.prefix || '';
+			var values = [];
+			var i;
+
+			for (i = min; i < max; i += step) {
+				values.push(prefix + Math.round(dfactor * i) / dfactor);
+			}
+
+			return values;
+		},
+
+		months: function(config) {
+			var cfg = config || {};
+			var count = cfg.count || 12;
+			var section = cfg.section;
+			var values = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = Months[Math.ceil(i) % 12];
+				values.push(value.substring(0, section));
+			}
+
+			return values;
+		},
+
+		color: function(index) {
+			return COLORS[index % COLORS.length];
+		},
+
+		transparentize: function(color, opacity) {
+			var alpha = opacity === undefined ? 0.5 : 1 - opacity;
+			return Color(color).alpha(alpha).rgbString();
+		}
+	};
+
+	// DEPRECATED
+	window.randomScalingFactor = function() {
+		return Math.round(Samples.utils.rand(-100, 100));
+	};
+
+	// INITIALIZATION
+
+	Samples.utils.srand(Date.now());
+
+	// Google Analytics
+	/* eslint-disable */
+	if (document.location.hostname.match(/^(www\.)?chartjs\.org$/)) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-28909194-3', 'auto');
+		ga('send', 'pageview');
+	}
+	/* eslint-enable */
+
+}(this));	
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+			labels: [
+				<?php
+					$query_date = $koneksi->query("SELECT * FROM tb_uangkas WHERE id_bulan=$month");
+					
+						$temp = [];
+						$temp2 = [];
+					for($i=1;$i<=31;$i++){
+						while($data_date = $query_date->fetch_assoc()){
+							$date_uangkas = intval(date("d",strtotime($data_date['date_uangkas'])));
+							array_push($temp, $date_uangkas);
+							$month_uangkas = intval(date("m", strtotime($data_date['date_uangkas'])));
+							$query_check_date = $koneksi->query("SELECT * FROM tb_uangkas WHERE date_uangkas LIKE '%".intval($month_uangkas)."-".intval($date_uangkas)."%'");
+							$data_check_date = $query_check_date->fetch_assoc();
+
+						}
+
+					}
+					foreach(array_unique($temp) as $date){
+						array_push($temp2,$date);
+					}
+					for($i=1;$i<=count($temp2);$i++){
+						echo $temp2[$i-1];
+						if($i < count($temp2)){
+							echo ",";
+						}
+					}
+				?>
+			],
+			datasets: [{
+				/* data uang kas yang didapat */
+				label: 'Yang Didapat',
+				fill: false,
+				backgroundColor: window.chartColors.blue,
+				borderColor: window.chartColors.blue,
+				data: [0 ,
+					<?php
+						$bulan = 1;
+							$query_total_kas = $koneksi->query("SELECT SUM(jumlah) as total FROM tb_uangkas WHERE id_bulan=$month");
+							$data_total_kas = $query_total_kas->fetch_assoc();
+							if(is_numeric($data_total_kas['total'])){
+								echo $data_total_kas['total'];
+							}
+							else{
+								echo "0";
+							}
+							$bulan++;
+						
+					?>
+				],
+			}, {
+				/* expect */
+				label: 'Seharusnya Didapat',
+				fill: false,
+				backgroundColor: window.chartColors.green,
+				borderColor: window.chartColors.green,
+				borderDash: [5, 5],
+				data: [0,
+					<?php
+						$bulan = 1;
+							$query_expect = $koneksi->query("SELECT count(id_siswa) as total FROM tb_siswa");
+							$data_expect = $query_expect->fetch_assoc();
+							if(is_numeric($data_expect['total']) && $data_expect['total'] > 0){
+								echo (($data_expect['total'] * 10000) * $bulan);
+							}
+							else{
+								echo "0";
+							}
+							$bulan++;
+						
+					?>
+				],
+			}, {
+				/* pengeluaran */
+				label: 'Pengeluaran Bulan Ini',
+				backgroundColor: window.chartColors.red,
+				borderColor: window.chartColors.red,
+				data: [
+					15,16,17,18,19,20
+				],
+				fill: true,
+			}]
+		}, 
+
+    options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'Chart.js Line Chart'
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Month'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Value'
+						}
+					}]
+				}
+			}
+});
+</script>
