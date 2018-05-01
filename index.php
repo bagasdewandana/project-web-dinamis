@@ -117,6 +117,19 @@
     
     </div><!-- wrapper -->
 
+    <!-- scroll to down -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+            $btnMulai = $('#btnMulai');
+            $statement = $('.statement');
+            $statementOffset = $statement.offset().top - 80;
+            $btnMulai.click(function(){
+              $('html, body').animate({scrollTop:$contentOffset}, 1500);
+            })
+        });
+    </script>
+    <!-- scroll to down -->
+
     <script type="text/javascript">
       $(document).ready(function(){
         $bg_menu_li = $('.menu-kiri li a, .menu-kanan li a');
