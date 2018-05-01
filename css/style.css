@@ -212,17 +212,17 @@ html
 .bg-statement{
 	width: 100%;
 	height: 100vh;
-	background-color: #E2B512;
+	background-color: #EDEDE2;
 }
 .statement{
 	width: 100%;
-	height: 100%;
+	height: 150%;
 	margin: 0 auto;
 }
 .statement h1{
 	padding: 50px;
 	text-align: center;
-	color: #000;
+	color: #E2B512;
 	font-family: lovelo;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -230,14 +230,21 @@ html
 	letter-spacing: 2px;
 }
 .statement .c-statement{
-	width: 85%;
-	height: 400px;
-	background-color: #F7F9F9;
+	width: 75%;
+	height: 300px;
+	background-color: #E2B512;
 	text-align: center;
+	margin-top: 10%;
+	border-radius: 10px;
 }
 .c-statement i{
 	padding: 20px;
 	font-size: 6em;
+	margin: 20px;	
+}
+
+.c-statement h2{
+	padding: 20px;
 }
 
 

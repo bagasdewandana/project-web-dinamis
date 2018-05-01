@@ -58,18 +58,20 @@
               <h1>Sifat Kami</h1>
               <div class="col-lg-4 animatedParent">
                 <div class="c-statement">
-                 <i class="fas fa-child"></i>
-                 <h2>Humble</h2>
+                 <i class="fab fa-grav"></i>
+                 <h2>Genius</h2>
                 </div><!-- c-statement -->
               </div><!-- col-lg-4 -->
               <div class="col-lg-4">
                 <div class="c-statement">
-                  
+                  <i class="fas fa-hand-peace"></i>
+                  <h2>Humble</h2>
                 </div><!-- c-statement -->
               </div><!-- col-lg-4 -->
               <div class="col-lg-4">
                 <div class="c-statement">
-                  
+                  <i class="fas fa-people-carry"></i>
+                  <h2>Brotherhood</h2>
                 </div><!-- c-statement -->
               </div><!-- col-lg-4 -->
             </div><!-- statement -->
