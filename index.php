@@ -87,6 +87,33 @@
           </div><!-- col-lg-12 -->
         </div><!-- max-content -->
       </div><!-- bg-statement -->
+
+      <div class="bg-kelas">
+        <div class="max-content">
+          <div class="col-lg-12">
+            <div class="kelas">
+              <h1>XI RPL 3</h1>
+              <div class="col-lg-6">
+                <div class="siswa">
+                  <img src="img/siswa.png">
+                </div>             
+                <h2>Jumlah Siswa</h2>
+                <hr>
+                <h3>30 Siswa</h3>
+              </div><!-- col-lg-6 -->
+              <div class="col-lg-6">
+                <div class="siswa">
+                  <img src="img/guru.png">
+                </div>             
+                <h2>Wali Kelas</h2>
+                <hr>   
+                <h3>Puji Aksama</h3>
+              </div><!-- col-lg-6 -->
+
+            </div><!-- kelas -->
+          </div><!-- col-lg-12 -->
+        </div><!-- max-content -->
+      </div><!-- bg-kelas -->
     
     </div><!-- wrapper -->
 
