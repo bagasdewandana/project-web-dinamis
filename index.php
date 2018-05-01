@@ -61,7 +61,7 @@
                  <i class="fab fa-grav"></i>
                  <h2>Genius</h2>
                  <div class="s-overlay">
-                   <p>We Are so Genius</p>
+                   <p>Mampu berpikir sesuai dengan keadaan</p>
                  </div>
                 </div><!-- c-statement -->
               </div><!-- col-lg-4 -->
@@ -70,7 +70,7 @@
                   <i class="fas fa-hand-peace"></i>
                   <h2>Humble</h2>
                   <div class="s-overlay">
-                   <p>We Are so Genius</p>
+                   <p>Ramah dan saling menghormati</p>
                  </div>
                 </div><!-- c-statement -->
               </div><!-- col-lg-4 -->
@@ -79,7 +79,7 @@
                   <i class="fas fa-people-carry"></i>
                   <h2>Brotherhood</h2>
                   <div class="s-overlay">
-                   <p>We Are so Genius</p>
+                   <p>Saling merangkul menjadi saudara</p>
                  </div>
                 </div><!-- c-statement -->
               </div><!-- col-lg-4 -->

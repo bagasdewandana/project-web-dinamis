@@ -231,7 +231,7 @@ html
 }
 .statement .c-statement{
 	width: 75%;
-	height: 300px;
+	height: 320px;
 	background-color: transparent;
 	text-align: center;
 	margin-top: 10%;
@@ -243,7 +243,7 @@ html
 .c-statement i{
 	padding: 20px;
 	font-size: 6em;
-	margin: 20px;
+	margin: 10px;
 	color: #E2B512;	
 }
 .c-statement h2{
@@ -255,6 +255,8 @@ html
 	font-weight: 900;
 	transform: translateY(300px);
 	transition: all .5s;
+	padding: 10px 30px;
+	color: #666
 }
 .c-statement:hover .s-overlay p{
 	transform: translateY(0);
