@@ -212,7 +212,7 @@ html
 .bg-statement{
 	width: 100%;
 	height: 100vh;
-	background-color: #EDEDE2;
+	background-color: #FFF;
 }
 .statement{
 	width: 100%;
@@ -232,19 +232,32 @@ html
 .statement .c-statement{
 	width: 75%;
 	height: 300px;
-	background-color: #E2B512;
+	background-color: transparent;
 	text-align: center;
 	margin-top: 10%;
 	border-radius: 10px;
+	border: 5px solid #E2B512;
+	cursor: pointer;
+	overflow-y: hidden;
 }
 .c-statement i{
 	padding: 20px;
 	font-size: 6em;
-	margin: 20px;	
+	margin: 20px;
+	color: #E2B512;	
 }
-
 .c-statement h2{
 	padding: 20px;
+	color: #E2B512;
+}
+.c-statement .s-overlay p{
+	font-family: montserrat;
+	font-weight: 900;
+	transform: translateY(300px);
+	transition: all .5s;
+}
+.c-statement:hover .s-overlay p{
+	transform: translateY(0);
 }
 
 
