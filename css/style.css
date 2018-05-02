@@ -160,12 +160,14 @@ html
 
 .hero .gif{
 	width: 100%;
-	padding-top: 20%;
+	margin-top: 20%;
+	animation: awal1 1s ease;
 }
 
 .hero .black{
 	width: 70%;
-	padding-top: 30%;
+	margin-top: 30%;
+	animation: awal 1s ease;
 }
 
 .hero h2{
@@ -173,6 +175,7 @@ html
 	padding-top: 10%;
 	color: #e2b512;
 	font-weight: lighter;
+	animation: opacity 2s ease;
 }
 
 .hero p{
@@ -181,6 +184,7 @@ html
 	color: #999;
 	font-family: montserrat;
 	font-weight: bold;
+	animation: turun 3s ease;
 }
 
 .hero a
@@ -194,6 +198,7 @@ html
     border-radius: 30px;
     letter-spacing: 2px;
     border: 2px solid #e2b512;
+    animation: turun1 5s ease;
 }
 
 .hero a span
@@ -316,5 +321,72 @@ html
 @media screen and (max-width: 960px){
 	.bg_hero{
 		height: auto !important;
+	}
+}
+
+@keyframes awal{
+	0%{
+		transform: translateX(-1000px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+}
+
+@keyframes awal1{
+	0%{
+		transform: translateX(1000px);
+	}
+
+	100%{
+		transform: translateX(0px);
+	}
+}
+
+@keyframes opacity{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes turun{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	75%{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes turun1{
+	0%{
+		opacity: 0;
+	}
+	25%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	75%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
 	}
 }
