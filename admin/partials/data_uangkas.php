@@ -393,7 +393,7 @@ var myChart = new Chart(ctx, {
 				],
 			}, {
 				/* pengeluaran */
-				label: 'Filled',
+				label: 'Data Pengeluaran',
 				backgroundColor: window.chartColors.red,
 				borderColor: window.chartColors.red,
 				data: [
