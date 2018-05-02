@@ -354,7 +354,7 @@ var myChart = new Chart(ctx, {
 			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','Desember'],
 			datasets: [{
 				/* data uang kas yang didapat */
-				label: 'Unfilled',
+				label: 'Pemasukan',
 				fill: false,
 				backgroundColor: window.chartColors.blue,
 				borderColor: window.chartColors.blue,
@@ -379,19 +379,31 @@ var myChart = new Chart(ctx, {
 				],
 			}, {
 				/* expect */
-				label: 'Dashed',
+				label: 'Yang Seharusnya Didapat',
 				fill: false,
 				backgroundColor: window.chartColors.green,
 				borderColor: window.chartColors.green,
 				borderDash: [5, 5],
 				data: [
+					<?php 
+						for($i = 1; $i <= 12; $i++){
+							echo "300000, ";
+						}
+					 ?>
+				],
+			}, {
+				/* pengeluaran */
+				label: 'Filled',
+				backgroundColor: window.chartColors.red,
+				borderColor: window.chartColors.red,
+				data: [
 					<?php
 						$bulan = 1;
 						while($bulan <= 12){
-							$query_expect = $koneksi->query("SELECT count(id_siswa) as total FROM tb_siswa");
-							$data_expect = $query_expect->fetch_assoc();
-							if(is_numeric($data_expect['total']) && $data_expect['total'] > 0){
-								echo (($data_expect['total'] * 10000) * $bulan);
+							$query_total_pengeluaran = $koneksi->query("SELECT SUM(jumlah_pengeluaran) as total FROM tb_pengeluaran WHERE id_bulan=$bulan");
+							$data_total_pengeluaran = $query_total_pengeluaran->fetch_assoc();
+							if(is_numeric($data_total_pengeluaran['total'])){
+								echo $data_total_pengeluaran['total'];
 							}
 							else{
 								echo "0";
@@ -402,14 +414,6 @@ var myChart = new Chart(ctx, {
 							$bulan++;
 						}
 					?>
-				],
-			}, {
-				/* pengeluaran */
-				label: 'Filled',
-				backgroundColor: window.chartColors.red,
-				borderColor: window.chartColors.red,
-				data: [
-					15,16,17,18,19,20
 				],
 				fill: true,
 			}]
