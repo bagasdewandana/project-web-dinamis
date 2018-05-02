@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2018 at 03:44 PM
+-- Generation Time: May 02, 2018 at 06:28 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -79,8 +79,11 @@ CREATE TABLE `tb_pengeluaran` (
 --
 
 INSERT INTO `tb_pengeluaran` (`id_pengeluaran`, `nama_kebutuhan`, `id_bulan`, `jumlah_pengeluaran`) VALUES
-(1, 'Sapu', 5, 30000),
-(2, 'Sikat', 6, 75000);
+(3, 'Sapu', 6, 50000),
+(4, 'Lap Kaca', 5, 10000),
+(5, 'Kursi', 4, 20000),
+(7, 'Perpisahan', 7, 100000),
+(8, 'Makan', 8, 10000);
 
 -- --------------------------------------------------------
 
@@ -152,18 +155,6 @@ CREATE TABLE `tb_uangkas` (
 --
 
 INSERT INTO `tb_uangkas` (`id_uangkas`, `id_siswa`, `id_bulan`, `jumlah`, `date_uangkas`) VALUES
-(45, 17, 5, 10000, '2018-05-01 12:49:46'),
-(46, 18, 5, 10000, '2018-05-01 12:50:15'),
-(47, 19, 5, 10000, '2018-05-01 12:50:17'),
-(48, 20, 5, 10000, '2018-05-01 12:50:18'),
-(49, 21, 5, 10000, '2018-05-01 12:50:29'),
-(50, 22, 5, 10000, '2018-05-01 06:52:27'),
-(51, 23, 5, 10000, '2018-05-03 06:53:18'),
-(52, 24, 5, 10000, '2018-05-03 06:53:23'),
-(66, 17, 6, 10000, '2018-05-02 21:40:57'),
-(67, 18, 6, 10000, '2018-05-02 21:41:02'),
-(68, 19, 6, 10000, '2018-05-02 21:41:02'),
-(69, 20, 6, 10000, '2018-05-02 21:41:03'),
 (70, 21, 6, 10000, '2018-05-02 21:41:04'),
 (71, 22, 6, 10000, '2018-05-02 21:41:04'),
 (72, 23, 6, 10000, '2018-05-02 21:41:05'),
@@ -193,7 +184,16 @@ INSERT INTO `tb_uangkas` (`id_uangkas`, `id_siswa`, `id_bulan`, `jumlah`, `date_
 (96, 24, 8, 10000, '2018-05-02 21:42:50'),
 (97, 25, 8, 10000, '2018-05-02 21:42:50'),
 (98, 26, 8, 10000, '2018-05-02 21:42:51'),
-(99, 27, 8, 10000, '2018-05-02 21:42:51');
+(99, 27, 8, 10000, '2018-05-02 21:42:51'),
+(100, 17, 4, 10000, '2018-05-03 00:08:04'),
+(101, 18, 4, 10000, '2018-05-03 00:08:08'),
+(102, 19, 4, 10000, '2018-05-03 00:08:09'),
+(103, 20, 4, 10000, '2018-05-03 00:08:10'),
+(104, 21, 4, 10000, '2018-05-03 00:08:10'),
+(105, 22, 4, 10000, '2018-05-03 00:08:11'),
+(106, 17, 5, 10000, '2018-05-03 00:20:18'),
+(107, 18, 5, 10000, '2018-05-03 00:20:23'),
+(108, 19, 5, 10000, '2018-05-03 00:20:24');
 
 -- --------------------------------------------------------
 
@@ -281,7 +281,7 @@ ALTER TABLE `tb_mapel`
 -- AUTO_INCREMENT for table `tb_pengeluaran`
 --
 ALTER TABLE `tb_pengeluaran`
-  MODIFY `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `tb_siswa`
@@ -293,7 +293,7 @@ ALTER TABLE `tb_siswa`
 -- AUTO_INCREMENT for table `tb_uangkas`
 --
 ALTER TABLE `tb_uangkas`
-  MODIFY `id_uangkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `id_uangkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
