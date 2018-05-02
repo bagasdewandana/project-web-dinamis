@@ -245,6 +245,8 @@ html
 	font-size: 6em;
 	margin: 10px;
 	color: #E2B512;	
+	margin-top: 50px;
+	transition: .5s ease;
 }
 .c-statement h2{
 	padding: 20px;
@@ -260,6 +262,10 @@ html
 }
 .c-statement:hover .s-overlay p{
 	transform: translateY(0);
+}
+
+.c-statement:hover i{
+	margin-top: 10px
 }
 
 .bg-kelas{
