@@ -351,7 +351,7 @@ var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','Desember'],
+			labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
 			datasets: [{
 				/* data uang kas yang didapat */
 				label: 'Pemasukan',
@@ -423,7 +423,7 @@ var myChart = new Chart(ctx, {
 				responsive: true,
 				title: {
 					display: true,
-					text: 'Chart.js Line Chart'
+					text: 'Data Uangkas REPALTI'
 				},
 				tooltips: {
 					mode: 'index',
