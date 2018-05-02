@@ -7,7 +7,7 @@
 <hr>
 <a href="?menu=data_uangkas&action=add" class="btn-info"><i class=" fa fa-plus"></i>  Tambah Uang Kas</a>
 <h3>Data Pemasukan</h2>
-<table class="siswa" border="1" cellpadding="15px">
+<table class="siswa" cellpadding="15px">
 	<tr>
 		<th>#No</th>
 		<th>Nama Siswa</th>
@@ -94,7 +94,7 @@
 <hr>
 <a href="?menu=data_uangkas&action=addPengeluaran" class="btn-info"><i class=" fa fa-plus"></i>   Tambah Pengeluaran</a>
 <h3>Data Pengeluaran</h2>
-<table class="siswa" border="1" cellpadding="15px">
+<table class="siswa" cellpadding="15px">
 	<tr>
 		<th>#No</th>
 		<th>Nama Kebutuhan</th>
@@ -183,7 +183,7 @@
 <hr>
 
 <h3>Data Valid</h3>
-<table class="siswa" border="1" cellpadding="15px">
+<table class="siswa" border="1" cellpadding="15px" style="border-color: #666">
 	<tr class="dark">
 		<td align="left">Uang Kas Yang Didapat</td>
 		<td>Rp. <?= number_format(@$total_uangkas) ?></td>
@@ -378,20 +378,6 @@ var myChart = new Chart(ctx, {
 					?>
 				],
 			}, {
-				/* expect */
-				label: 'Yang Seharusnya Didapat',
-				fill: false,
-				backgroundColor: window.chartColors.green,
-				borderColor: window.chartColors.green,
-				borderDash: [5, 5],
-				data: [
-					<?php 
-						for($i = 1; $i <= 12; $i++){
-							echo "300000, ";
-						}
-					 ?>
-				],
-			}, {
 				/* pengeluaran */
 				label: 'Data Pengeluaran',
 				backgroundColor: window.chartColors.red,
@@ -416,6 +402,20 @@ var myChart = new Chart(ctx, {
 					?>
 				],
 				fill: true,
+			}, {
+				/* expect */
+				label: 'Yang Seharusnya Didapat',
+				fill: false,
+				backgroundColor: window.chartColors.green,
+				borderColor: window.chartColors.green,
+				borderDash: [5, 5],
+				data: [
+					<?php 
+						for($i = 1; $i <= 12; $i++){
+							echo "300000, ";
+						}
+					 ?>
+				],
 			}]
 		}, 
 

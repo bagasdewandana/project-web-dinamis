@@ -2,7 +2,7 @@
 <hr>
 
 <a href="?menu=data_mapel&action=add" class="btn-info"><i class=" fa fa-plus"></i>  Tambah Mapel</a>
-<table class="siswa" border="1" cellpadding="15px">
+<table class="siswa" cellpadding="15px">
 	<tr>
 		<th>No</th>
 		<th>Nama Mapel</th>

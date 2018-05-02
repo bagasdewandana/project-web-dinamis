@@ -1,7 +1,7 @@
 <h1>Data Siswa</h1>
 <hr>
 <a href="?menu=data_siswa&action=add" class="btn-info"><i class=" fa fa-plus"></i>  Tambah Siswa</a>
-<table class="siswa" border="1" cellpadding="15px">
+<table class="siswa" cellpadding="15px">
 	<tr>
 		<th>No</th>
 		<th>Nama Siswa</th>

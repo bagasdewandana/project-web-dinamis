@@ -216,6 +216,14 @@ hr{
 	color: #EAEAEA;
 }
 
+.siswa tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+.siswa tr:nth-child(odd){
+	background-color: #EAEAEA;
+}
+
 .active{
 	background: #495057 !important;
 	color: white !important;
