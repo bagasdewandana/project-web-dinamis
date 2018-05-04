@@ -103,10 +103,10 @@
         <div class="max-content">
           <div class="col-lg-12">
             <div class="kelas">
-              <h1>XI RPL 3</h1>
-              <div class="col-lg-6">
+              <h1 class="animated bounceInDown">XI RPL 3</h1>
+              <div class="col-lg-6 animatedParent">
                 <div class="siswa">
-                  <img src="img/siswa.png">
+                  <img src="img/siswa.png" class="animated bounceInLeft">
                 </div>             
                 <h2>Jumlah Siswa</h2>
                 <hr>
@@ -114,9 +114,9 @@
                   <div class="counter" data-count="30">0</div> Siswa
                 </h3>
               </div><!-- col-lg-6 -->
-              <div class="col-lg-6">
+              <div class="col-lg-6 animatedParent">
                 <div class="siswa">
-                  <img src="img/guru.png">
+                  <img src="img/guru.png" class="animated bounceInRight">
                 </div>             
                 <h2>Wali Kelas</h2>
                 <hr>   
@@ -134,9 +134,8 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $btnMulai = $('#btnMulai');
-        $navbar = $('.bg-menu').outerHeight();
         $statement = $('.bg-statement');
-        $statement_offset = $statement.offset().top - $navbar;
+        $statement_offset = $statement.offset().top;
         $btnMulai.click(function(){
           $('html, body').animate({scrollTop:$statement_offset}, 1000);
         });
