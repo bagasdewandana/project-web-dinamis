@@ -26,6 +26,9 @@
       <?php 
         require_once 'partials/navbar.inc.php';
       ?>
+      <div class="to-top">
+        <i class="fas fa-angle-double-up" aria-hidden="true"></i>
+      </div>
       <div class="bg-hero">
         <div class="max-content">
           <div class="col-lg-12">
@@ -185,6 +188,27 @@
       });
     </script>
 
+    <!-- back-to-top -->
+    <script type="text/javascript">
+      $(window).scroll(function(){
+        $nav = $('.bg-menu').outerHeight();
+        $windowScroll = $(window).scrollTop();
+        $to_top = $('.to-top i');
+        if ($windowScroll > $nav) {
+          $to_top.css({'opacity':'1'});
+        }
+        else{
+          $to_top.css({'opacity':'0'});
+        }
+      });
+
+      $(document).ready(function(){
+        $to_top = $('.to-top i');
+        $to_top.click(function(){
+          $('html, body').animate({scrollTop:0}, 1000);
+        });
+      });
+    </script>
 
     <script type="text/javascript" src="css3-animate-it-master/js/css3-animate-it.js"></script>
     <script type="text/javascript" src="js/count.js"></script>

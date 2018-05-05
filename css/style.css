@@ -138,6 +138,20 @@ html
 	margin: 0 auto;
 }
 
+.to-top i{
+	position: fixed;
+	padding: 20px;
+	background-color: #E2B512;
+	z-index: 999;
+	bottom: 20px;
+	right: 30px;
+	border-radius: 30px;
+	color: #FFF;
+	opacity: 0;
+	transition: .5s cubic-bezier(0, 0, 0.22, 1.2);
+	cursor: pointer;
+}
+
 .max-content{
 	width: 90%;
 	max-width: 90%;
@@ -185,7 +199,7 @@ html
 	color: #999;
 	font-family: montserrat;
 	font-weight: bold;
-	animation: turun 3s ease;
+	animation: turun 2.5s ease;
 }
 
 .hero a
@@ -199,7 +213,7 @@ html
     border-radius: 30px;
     letter-spacing: 2px;
     border: 2px solid #e2b512;
-    animation: turun1 5s ease;
+    animation: turun1 3.5s ease;
     z-index: 3;
 }
 
