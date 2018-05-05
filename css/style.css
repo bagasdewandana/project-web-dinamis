@@ -149,6 +149,7 @@ html
 	width: 100%;
 	height: 100vh;
 	background-color: #EDEDE2;
+	z-index: 5;
 }
 
 .hero{
@@ -199,6 +200,7 @@ html
     letter-spacing: 2px;
     border: 2px solid #e2b512;
     animation: turun1 5s ease;
+    z-index: 3;
 }
 
 .hero a span
@@ -219,6 +221,33 @@ html
 	height: 100vh;
 	background-color: #FFF;
 }
+.bg-statement .next a
+{
+    position: relative; 
+    top: 20px;
+    text-decoration: none;
+    color: #F7F9F9;
+    background-color: #e2b512;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    z-index: 3;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #EDEDE2;
+}
+
+.bg-statement .next a span
+{
+    overflow: hidden;
+    opacity: 0;
+    margin-left: -50px;
+    transition: .3s;
+}
+
+.bg-statement .next a:hover span
+{
+    opacity: 1;
+    margin-left: 10px;
+}
 .statement{
 	width: 100%;
 	height: 150%;
@@ -233,6 +262,8 @@ html
 	text-transform: uppercase;
 	font-style: italic;
 	letter-spacing: 2px;
+	position: relative;
+	z-index: 1;
 }
 .statement .c-statement{
 	width: 75%;
@@ -315,6 +346,9 @@ html
 	color: #E2B512;
 	letter-spacing: 3px;
 	font-weight: lighter;
+}
+.kelas .counter{
+	display: inline;
 }
 
 

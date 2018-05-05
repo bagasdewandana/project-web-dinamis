@@ -31,7 +31,7 @@
           <div class="col-lg-12">
             <div class="hero">
 
-              <div class="col-lg-6 animatedParent">
+              <div class="col-lg-6">
                 <img class="black" src="img/3-black.png">
                 <h2>Barbaric people is here mate !</h2>
                 <p>Ingin mengetahui REPALTI lebih jauh ?</p>
@@ -53,11 +53,19 @@
 
       <div class="bg-statement row">
         <div class="max-content">
-          <div class="col-lg-12">
+          <div class="col-lg-12 animatedParent">
             <div class="statement">
-              <h1>Sifat Kami</h1>
+              <div class="next">
+                <a href="#" id="next-kelas">
+                  <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                  <span>
+                    Next
+                  </span>
+                </a>
+              </div>
+              <h1 class="animated fadeInDown">Sifat Kami</h1>
               <div class="col-lg-4 animatedParent">
-                <div class="c-statement">
+                <div class="c-statement animated fadeInLeft">
                  <i class="fab fa-grav"></i>
                  <h2>Genius</h2>
                  <div class="s-overlay">
@@ -65,8 +73,8 @@
                  </div>
                 </div><!-- c-statement -->
               </div><!-- col-lg-4 -->
-              <div class="col-lg-4">
-                <div class="c-statement">
+              <div class="col-lg-4 animatedParent">
+                <div class="c-statement animated fadeInUp">
                   <i class="fas fa-hand-peace"></i>
                   <h2>Humble</h2>
                   <div class="s-overlay">
@@ -74,8 +82,8 @@
                  </div>
                 </div><!-- c-statement -->
               </div><!-- col-lg-4 -->
-              <div class="col-lg-4">
-                <div class="c-statement">
+              <div class="col-lg-4 animatedParent">
+                <div class="c-statement animated fadeInRight">
                   <i class="fas fa-people-carry"></i>
                   <h2>Brotherhood</h2>
                   <div class="s-overlay">
@@ -99,7 +107,9 @@
                 </div>             
                 <h2>Jumlah Siswa</h2>
                 <hr>
-                <h3>30 Siswa</h3>
+                <h3>
+                  <div class="counter" data-count="30">0</div> Siswa
+                </h3>
               </div><!-- col-lg-6 -->
               <div class="col-lg-6">
                 <div class="siswa">
@@ -119,15 +129,6 @@
 
     <!-- scroll to down -->
     <script type="text/javascript">
-      // $(document).ready(function(){
-      //       $btnMulai = $('#btnMulai');
-      //       $statement = $('.statement');
-      //       $statementOffset = $statement.offset().top - 80;
-      //       $btnMulai.click(function(){
-      //         $('html, body').animate({scrollTop:$contentOffset}, 1500);
-      //       })
-      //   });
-
       $(document).ready(function(){
         $btnMulai = $('#btnMulai');
         $navbar = $('.bg-menu').outerHeight();
@@ -172,7 +173,21 @@
       });
     </script>
 
+    <!-- click-to-next -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $next_kelas = $('#next-kelas');
+        $page_kelas = $('.bg-kelas');
+        $next_kelasOffset = $page_kelas.offset().top;
+        $next_kelas.click(function(){
+          $('html, body').animate({scrollTop:$next_kelasOffset}, 1000);
+        });
+      });
+    </script>
+
+
     <script type="text/javascript" src="css3-animate-it-master/js/css3-animate-it.js"></script>
+    <script type="text/javascript" src="js/count.js"></script>
   </body>
 
 </html>
