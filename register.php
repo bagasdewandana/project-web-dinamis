@@ -59,7 +59,7 @@
 							                  </span>
 							                </button>
 										</a>
-										<div class="to-login"> Sudah memiliki akun ? <a href="login.php">Login</a></div>
+										<div class="to-login"> Sudah menjadi bagian barbar ? <a href="login.php">Login</a></div>
 										<?php 
 											if (isset($_POST['btn_submit'])) {
 												$email_user = $koneksi->real_escape_string($_POST['email_user']);
