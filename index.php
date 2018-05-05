@@ -119,14 +119,24 @@
 
     <!-- scroll to down -->
     <script type="text/javascript">
+      // $(document).ready(function(){
+      //       $btnMulai = $('#btnMulai');
+      //       $statement = $('.statement');
+      //       $statementOffset = $statement.offset().top - 80;
+      //       $btnMulai.click(function(){
+      //         $('html, body').animate({scrollTop:$contentOffset}, 1500);
+      //       })
+      //   });
+
       $(document).ready(function(){
-            $btnMulai = $('#btnMulai');
-            $statement = $('.statement');
-            $statementOffset = $statement.offset().top - 80;
-            $btnMulai.click(function(){
-              $('html, body').animate({scrollTop:$contentOffset}, 1500);
-            })
+        $btnMulai = $('#btnMulai');
+        $navbar = $('.bg-menu').outerHeight();
+        $statement = $('.bg-statement');
+        $statement_offset = $statement.offset().top - $navbar;
+        $btnMulai.click(function(){
+          $('html, body').animate({scrollTop:$statement_offset}, 1000);
         });
+      });
     </script>
     <!-- scroll to down -->
 
