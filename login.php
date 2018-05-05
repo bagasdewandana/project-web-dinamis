@@ -19,7 +19,15 @@
 	
 	<body>
 		<div class="wrapper">
-			<div class="bg-banner row">
+			<div class="bg-banner row animatedParent">
+				<div class="back animated fadeInDown slowest">
+					<a href="index.php">
+						<i class="fas fa-angle-double-left" aria-hidden="true"></i>
+	                  	<span>
+	                    	Back to Home
+	                 	</span>
+                	</a>
+				</div><!-- back-to-index -->
 				<div class="col-lg-12">
 					<div class="max-content">
 						<div class="banner">
@@ -41,7 +49,7 @@
 											<label>Password</label>
 											<input type="password" name="password" placeholder="Tulis password kamu disini">
 										</div>
-										<button id="btnMulai" type="submit" name="btn_submit">Login
+										<button type="submit" name="btn_submit">Login
 						                  <span>
 						                    <i class="fas fa-chevron-circle-right" aria-hidden="true"></i>
 						                  </span>

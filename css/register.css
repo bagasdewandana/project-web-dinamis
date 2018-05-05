@@ -262,3 +262,45 @@ html
     opacity: 1;
     margin-left: 10px;
 }
+.to-login{
+	font-family: montserrat;
+	color: #818181;
+	font-size: 18px;
+	margin-top: 30px;
+	margin-left: 30px;
+	display: inline-block;
+}
+.to-login a{
+	color: #FFD300;
+	font-weight: bold;
+	border-bottom: 2px solid #FFD300;
+	text-decoration: none;
+}
+.back a
+{
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #FFD300;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: 2px solid #FFD300;
+    z-index: 3;
+    margin: 10px;
+}
+
+.back a span
+{
+    overflow: hidden;
+    opacity: 0;
+    margin-left: -110px;
+    transition: .3s;
+    font-family: montserrat;
+}
+
+.back a:hover span
+{
+    opacity: 1;
+    margin-left: 10px;
+}
