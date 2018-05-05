@@ -220,7 +220,7 @@ html
     text-decoration: none;
     color: #F7F9F9;
     background-color: #F7D13B;
-    padding: 12px 40px;
+    padding: 10px 20px;
     border-radius: 30px;
     letter-spacing: 2px;
     border: 2px solid #F7D13B;
@@ -231,6 +231,20 @@ html
     font-weight: 600;
 }
 
+.banner button span
+{
+    overflow: hidden;
+    opacity: 0;
+    margin-left: -10px;
+    transition: .3s;
+    font-family: montserrat;
+}
+
+.banner button:hover span
+{
+    opacity: 1;
+    margin-left: 10px;
+}
 .banner hr{
 	width: 80%;
 	margin: 40px auto 15px auto;
