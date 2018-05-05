@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="fontawesome/font-css/css/fa-solid.min.css">
 		<link rel="stylesheet" href="fontawesome/font-css/css/fa-regular.min.css">
 		<link rel="stylesheet" href="fontawesome/font-css/css/fa-brands.min.css">
+		<link rel="stylesheet" href="css/animations.css">
 	</head>
 	
 	<body>
@@ -22,13 +23,13 @@
 				<div class="col-lg-12">
 					<div class="max-content">
 						<div class="banner">
-							<div class="col-lg-6">
-								<div class="img">
+							<div class="col-lg-6 animatedParent">
+								<div class="img animated fadeInLeft">
 									<img src="img/p-login.png">
 								</div><!-- img -->
 							</div><!-- col-lg-6 -->
-							<div class="col-lg-6">
-								<div class="form">
+							<div class="col-lg-6 animatedParent">
+								<div class="form animated fadeInRight">
 									<h1>Halo,</h1>
 									<h2>Selamat datang kembali manusia bebal !</h2>
 									<form action="" method="POST">
@@ -47,8 +48,10 @@
 						                </button>
 									</form>
 								</div>
-								<hr>
-								<p class="txt-register">Belum Menjadi Bagian Dari Barbar? <a href="register.php">Register</a></p>
+								<div class="animated fadeInUp">
+									<hr>
+									<p class="txt-register ">Belum Menjadi Bagian Dari Barbar? <a href="register.php">Register</a></p>
+								</div>
 							</div><!-- col-lg-6 -->
 						</div><!-- banner -->
 					</div><!-- max-content -->
@@ -93,5 +96,7 @@
 			}
 		}
 	 ?>
+	 <script src="js/jquery-3.2.1.min.js"> </script>
+	 <script type="text/javascript" src="css3-animate-it-master/js/css3-animate-it.js"></script>
 
 </html>
