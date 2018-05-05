@@ -8,7 +8,8 @@
 	<head>
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width,intial-scale=1.0" >
-    	<title>Login to REPALTI</title>
+    	<title>Login - Repalti</title>
+    	<link rel="icon" href="img/31.png">
     	<link rel="stylesheet" type="text/css" href="css/login.css">
     	<link rel="stylesheet" href="fontawesome/font-css/css/fontawesome.min.css">
 		<link rel="stylesheet" href="fontawesome/font-css/css/fa-solid.min.css">

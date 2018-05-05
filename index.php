@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,intial-scale=1.0" >
-    <title>REPALTI - RPL 3 SMK Ti Bali Global</title>
+    <title>Repalti</title>
     <link rel="icon" href="img/31.png">
     <link rel="stylesheet" href="css/style.css?v=0.1" type="text/css">
     <link rel="stylesheet" href="fontawesome/font-css/css/fontawesome.css">
