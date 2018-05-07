@@ -23,9 +23,11 @@
 				<div class="col-md-12 bg-navbar">
 					<div class="col-md-4">
 						<div class="logo">
-							<img src="../img/3.png">
+							<a href="../index.php"><img src="../img/3.png"></a>
 						</div>
-						<div class="logo-text">REPALTI</div>
+						<div class="logo-text">
+							<a href="../index.php">REPALTI</a>
+						</div>
 					</div>
 					<div class="col-md-4"></div>
 					<div class="col-md-4">
