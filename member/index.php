@@ -27,7 +27,9 @@
 						<div class="logo">
 							<img src="../img/3.png">
 						</div>
-						<div class="logo-text">REPALTI</div>
+						<div class="logo-text">
+							<a href="../index.php">REPALTI</a>
+						</div>
 					</div>
 					<div class="col-md-4"></div>
 					<div class="col-md-4">
