@@ -15,16 +15,25 @@
 		<link rel="stylesheet" href="fontawesome/font-css/css/fa-solid.min.css">
 		<link rel="stylesheet" href="fontawesome/font-css/css/fa-regular.min.css">
 		<link rel="stylesheet" href="fontawesome/font-css/css/fa-brands.min.css">
+		<link rel="stylesheet" href="css/animations.css">
 	</head>
 	
 	<body>
 		<div class="wrapper">
-			<div class="bg-banner row">
+			<div class="bg-banner row animatedParent">
+				<div class="back animated bounceInDown slowest">
+					<a href="index.php">
+						<i class="fas fa-angle-double-left" aria-hidden="true"></i>
+		              	<span>
+		                	Back to Home
+		             	</span>
+		        	</a>
+				</div><!-- back-to-index -->
 				<div class="col-lg-12">
 					<div class="max-content">
 						<div class="banner">
-							<div class="col-lg-6">
-								<div class="form">
+							<div class="col-lg-6 animatedParent">
+								<div class="form animated bounceInLeft">
 									<h1>Halo,</h1>
 									<h2>Bergabunglah Menjadi Manusia Barbar !</h2>
 									<form action="" method="POST">
@@ -51,10 +60,7 @@
 							                  </span>
 							                </button>
 										</a>
-<<<<<<< HEAD
 										<div class="to-login"> Sudah menjadi bagian barbar ? <a href="login.php">Login</a></div>
-=======
->>>>>>> parent of 345b79a... Add Back to Home - Register & Login
 										<?php 
 											if (isset($_POST['btn_submit'])) {
 												$email_user = $koneksi->real_escape_string($_POST['email_user']);
@@ -92,8 +98,8 @@
 									</form>
 								</div>
 							</div><!-- col-lg-6 -->
-							<div class="col-lg-6">
-								<div class="img">
+							<div class="col-lg-6 animatedParent">
+								<div class="img animated bounceInRight">
 									<img src="img/p-register.png">
 								</div><!-- img -->
 							</div><!-- col-lg-6 -->
@@ -102,6 +108,8 @@
 				</div><!-- col-lg-12 -->
 			</div><!-- bg-banner -->
 		</div><!-- wrapper -->
+		<script src="js/jquery-3.2.1.min.js"> </script>
+	 	<script type="text/javascript" src="css3-animate-it-master/js/css3-animate-it.js"></script>
 	</body>
 
 </html>

@@ -23,7 +23,7 @@
 				<div class="col-md-12 bg-navbar">
 					<div class="col-md-4">
 						<div class="logo">
-							<a href="../index.php"><img src="../img/31.png"></a>
+							<a href="../index.php"><img src="../img/3.png"></a>
 						</div>
 						<div class="logo-text">
 							<a href="../index.php">REPALTI</a>

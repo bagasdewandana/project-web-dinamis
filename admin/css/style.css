@@ -4,10 +4,6 @@
 	src: url(../../fonts/LitSans-Medium.otf);
 }
 
-html{
-	box-sizing: border-box;
-}
-
 body{
 	overflow-x: hidden;
 	margin: 0;
@@ -100,12 +96,11 @@ hr{
 .wrapper{
 	width: 100%;
 	height: auto;
-	max-width: 100%;
 }
 
 .bg-navbar{
 	height: 75px;
-	background: #FFF;
+	background: #343a40;
 	position: fixed;
 	z-index: 100;
 }
@@ -114,7 +109,7 @@ hr{
 	margin-top: 75px;
 	padding: 25px 0;
 	height: 100vh;
-	background: #FFF;
+	background: #343a40;
 	position: fixed;
 	z-index: 99;
 }
@@ -144,7 +139,6 @@ hr{
 	color: white;
 	letter-spacing: 2px;
 	text-decoration: none;
-	color: #000
 }
 .canvas{
 	height: auto;
@@ -184,17 +178,16 @@ hr{
 	float: left;
 	height: 40px;
 	width: 80%;
-	color: #000;
+	color: #868e96;
 	line-height:40px;
 	transition: 0.2s ease;
 	font-size: 14px;
 	letter-spacing: 1.5px;
-	border: 0 solid #E1B41D;
 }
 
 .menu ul li a:hover{
-	border-left: 5px solid #E1B41D;
-	transition: 0.2s ease;
+	background: #495057;
+	color: white;
 }
 
 .menu i{
@@ -233,8 +226,8 @@ hr{
 }
 
 .active{
-	border-left: 5px solid #E1B41D !important;
-	color: #000 !important;
+	background: #495057 !important;
+	color: white !important;
 }
 
 .btn-primary{
@@ -243,7 +236,6 @@ hr{
 	background: #0086CB;
 	padding: 10px 25px;
 	border-radius: 5px;
-	display: block;
 }
 
 .btn-danger{
@@ -252,9 +244,6 @@ hr{
 	background: #CB2C31;
 	padding: 10px 20px;
 	border-radius: 5px;
-	display: block;
-	margin-top: 5px;
-
 }
 
 .btn-info{
@@ -387,15 +376,12 @@ hr{
 	color: #fff;
 	text-decoration: none;
 	line-height: 80px;
-	background-color: #E1B41D;
-	padding: 10px;
-	border-radius: 5px;
-	margin-left: 20px;
+	background-color: #23375a;padding: 10px;border-radius: 5px;margin-left: 20px;
 }
 
 
 .btn-user{
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 	line-height: 50px;
 }
