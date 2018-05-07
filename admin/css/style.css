@@ -100,7 +100,7 @@ hr{
 
 .bg-navbar{
 	height: 75px;
-	background: #343a40;
+	background: #E2B512;
 	position: fixed;
 	z-index: 100;
 }
@@ -109,9 +109,10 @@ hr{
 	margin-top: 75px;
 	padding: 25px 0;
 	height: 100vh;
-	background: #343a40;
+	background: #FFF;
 	position: fixed;
 	z-index: 99;
+	box-shadow: 2px 2px 10px -1px #E2B512;
 }
 .nav{
 	height: 75px;
@@ -140,6 +141,11 @@ hr{
 	letter-spacing: 2px;
 	text-decoration: none;
 }
+
+.block{
+	display: block;
+}
+
 .canvas{
 	height: auto;
 	padding-bottom: 50px;
@@ -178,16 +184,16 @@ hr{
 	float: left;
 	height: 40px;
 	width: 80%;
-	color: #868e96;
+	color: #000;
 	line-height:40px;
 	transition: 0.2s ease;
 	font-size: 14px;
 	letter-spacing: 1.5px;
+	border-left: 0px solid #E2B512;
 }
 
 .menu ul li a:hover{
-	background: #495057;
-	color: white;
+	border-left: 5px solid #E2B512;
 }
 
 .menu i{
@@ -213,21 +219,20 @@ hr{
 }
 
 .siswa th{
-	background: #23375a;
+	background: #e2b512;
 	color: #EAEAEA;
 }
 
 .siswa tr:nth-child(even){
-	background-color: #f5f5f5;
+	background-color: #fffdc4;
 }
 
 .siswa tr:nth-child(odd){
-	background-color: #EAEAEA;
+	background-color: #fff7a3;
 }
 
 .active{
-	background: #495057 !important;
-	color: white !important;
+	border-left: 5px solid #E2B512 !important;
 }
 
 .btn-primary{
@@ -248,7 +253,7 @@ hr{
 
 .btn-info{
 	float: right;
-	background: forestgreen;
+	background: #ccb71e;
 	width: 200px;
 	text-align: center;
 	height: 35px;
@@ -334,7 +339,7 @@ hr{
 }
 
 .dark{
-	background: #343A40 !important;
+	background: #E2B512 !important;
 	color: white !important;
 }
 
@@ -373,10 +378,13 @@ hr{
 }
 
 .btn-logout a{
-	color: #fff;
+	color: #E2B512;
 	text-decoration: none;
 	line-height: 80px;
-	background-color: #23375a;padding: 10px;border-radius: 5px;margin-left: 20px;
+	background-color: #FFF;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 20px;
 }
 
 

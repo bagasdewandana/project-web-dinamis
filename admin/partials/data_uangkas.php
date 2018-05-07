@@ -183,7 +183,7 @@
 <hr>
 
 <h3>Data Valid</h3>
-<table class="siswa" border="1" cellpadding="15px" style="border-color: #666">
+<table class="siswa" border="1" cellpadding="15px" style="border-color: #fff6d6">
 	<tr class="dark">
 		<td align="left">Uang Kas Yang Didapat</td>
 		<td>Rp. <?= number_format(@$total_uangkas) ?></td>
