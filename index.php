@@ -32,10 +32,10 @@
       </div>
       <div class="bg-hero">
         <div class="max-content">
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="hero">
 
-              <div class="col-lg-6">
+              <div class="col-lg-6 col-md-12 col-sm-12">
                 <img class="black" src="img/3-black.png">
                 <h2>Barbaric people is here mate !</h2>
                 <p>Ingin mengetahui REPALTI lebih jauh ?</p>
@@ -46,7 +46,7 @@
                 </a>
               </div><!-- col-lg-6 -->
 
-              <div class="col-lg-6">
+              <div class="col-lg-6 col-md-12 col-sm-12">
                 <img class="gif" src="img/focus.gif">
               </div><!-- col-lg-6 -->
 
@@ -57,7 +57,7 @@
 
       <div class="bg-statement row">
         <div class="max-content">
-          <div class="col-lg-12 animatedParent">
+          <div class="col-lg-12 col-md-12 col-sm-12 animatedParent">
             <div class="statement">
               <div class="next">
                 <a href="#" id="next-kelas">
@@ -68,7 +68,7 @@
                 </a>
               </div>
               <h1 class="animated fadeInDown">Sifat Kami</h1>
-              <div class="col-lg-4 animatedParent">
+              <div class="col-lg-4 col-md-6 col-sm-12 animatedParent">
                 <div class="c-statement animated fadeInLeft">
                  <i class="fab fa-grav"></i>
                  <h2>Genius</h2>
@@ -77,7 +77,7 @@
                  </div>
                 </div><!-- c-statement -->
               </div><!-- col-lg-4 -->
-              <div class="col-lg-4 animatedParent">
+              <div class="col-lg-4 col-md-6 col-sm-12 animatedParent">
                 <div class="c-statement animated fadeInUp">
                   <i class="fas fa-hand-peace"></i>
                   <h2>Humble</h2>
@@ -86,7 +86,7 @@
                  </div>
                 </div><!-- c-statement -->
               </div><!-- col-lg-4 -->
-              <div class="col-lg-4 animatedParent">
+              <div class="col-lg-4 col-md-12 col-sm-12 animatedParent">
                 <div class="c-statement animated fadeInRight">
                   <i class="fas fa-people-carry"></i>
                   <h2>Brotherhood</h2>
@@ -102,10 +102,10 @@
 
       <div class="bg-kelas">
         <div class="max-content">
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="kelas">
               <h1 class="animated bounceInDown">XI RPL 3</h1>
-              <div class="col-lg-6 animatedParent">
+              <div class="col-lg-6 col-md-12 col-sm-12 animatedParent">
                 <div class="siswa">
                   <img src="img/siswa.png" class="animated bounceInLeft">
                 </div>             
@@ -115,7 +115,7 @@
                   <div class="counter" data-count="30">0</div> Siswa
                 </h3>
               </div><!-- col-lg-6 -->
-              <div class="col-lg-6 animatedParent">
+              <div class="col-lg-6 col-md-12 col-sm-12 animatedParent">
                 <div class="siswa">
                   <img src="img/guru.png" class="animated bounceInRight">
                 </div>             
