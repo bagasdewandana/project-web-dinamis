@@ -43,7 +43,8 @@ body
 }
 
 ::selection{
-	background: #000;
+	background: #E2B512;
+	color: #fff;
 }
 
 html
