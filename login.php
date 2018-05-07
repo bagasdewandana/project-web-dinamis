@@ -43,8 +43,8 @@
 									<h2>Selamat datang kembali manusia bebal !</h2>
 									<form action="" method="POST">
 										<div class="form-control">
-											<label>E-Mail</label>
-											<input type="text" name="email_user" placeholder="Tulis email kamu disini">
+											<label>E-Mail / Username</label>
+											<input type="text" name="email_user" placeholder="Tulis email / username kamu disini">
 										</div>
 										<div class="form-control">
 											<label>Password</label>

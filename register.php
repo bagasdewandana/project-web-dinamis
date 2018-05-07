@@ -43,7 +43,7 @@
 										</div>
 										<div class="form-control">
 											<label>Username</label>
-											<input type="text" name="username" placeholder="Tulis Nama Samaran kamu disini" required>
+											<input type="text" name="username" placeholder="Tulis username kamu disini" required>
 										</div>
 										<div class="form-control">
 											<label>Password</label>
