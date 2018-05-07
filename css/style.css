@@ -439,3 +439,14 @@ html
 		opacity: 1;
 	}
 }
+
+.bg-contact{
+	padding: 0;
+	margin: 0 auto;	
+}
+
+.contact{
+	width: 100%;
+	height: 100vh;
+	background-color: red;
+}

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repalti</title>
     <link rel="icon" href="img/31.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css?v=0.1" type="text/css">
     <link rel="stylesheet" href="fontawesome/font-css/css/fontawesome.css">
     <link rel="stylesheet" href="fontawesome/font-css/css/fontawesome.min.css">
@@ -100,7 +100,7 @@
         </div><!-- max-content -->
       </div><!-- bg-statement -->
 
-      <div class="bg-kelas">
+      <div class="bg-kelas row">
         <div class="max-content">
           <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="kelas">
@@ -128,6 +128,17 @@
           </div><!-- col-lg-12 -->
         </div><!-- max-content -->
       </div><!-- bg-kelas -->
+
+      <div class="bg-contact row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="max-content">
+            <div class="contact">
+              <div class="col-lg-6"></div>
+              <div class="col-lg-6"></div>
+            </div><!-- contact -->
+          </div><!-- max-content -->
+        </div><!-- col-lg-md-sm-12 -->
+      </div><!-- bg-contact -->
     
     </div><!-- wrapper -->
 
