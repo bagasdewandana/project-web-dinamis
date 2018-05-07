@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,intial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repalti</title>
     <link rel="icon" href="img/31.png">
     <link rel="stylesheet" href="css/style.css?v=0.1" type="text/css">

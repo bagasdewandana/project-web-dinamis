@@ -262,6 +262,7 @@ html
 {
     opacity: 1;
     margin-left: 10px;
+<<<<<<< HEAD
 }
 .to-login{
 	font-family: montserrat;
@@ -304,4 +305,6 @@ html
 {
     opacity: 1;
     margin-left: 10px;
+=======
+>>>>>>> parent of 345b79a... Add Back to Home - Register & Login
 }
