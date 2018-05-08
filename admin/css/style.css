@@ -107,7 +107,7 @@ hr{
 
 .bg-leftmenu{
 	margin-top: 75px;
-	padding: 0;
+	padding: 35px 0;
 	height: 100vh;
 	background: #FFF;
 	position: fixed;
@@ -179,7 +179,7 @@ hr{
 
 .menu ul li a{
 	text-decoration: none;
-	padding: 15px 10%;
+	padding: 25px 10%;
 	text-align: center;
 	float: left;
 	height: 40px;
@@ -207,6 +207,7 @@ hr{
 	margin-top: 50px;
 	margin-left: 50px;
 	padding: 10px 5%;
+	box-shadow: 2px 2px 30px -2px #d8d8d8;
 }
 
 .siswa
@@ -222,7 +223,7 @@ hr{
 
 .siswa th{
 	background: #e2b512;
-	color: #EAEAEA;
+	color: #fff;
 }
 
 .siswa tr:nth-child(even){
@@ -380,10 +381,10 @@ hr{
 }
 
 .btn-logout a{
-	color: #E2B512;
+	color: #fff;
 	text-decoration: none;
 	line-height: 80px;
-	background-color: #FFF;
+	background-color: #E2B512;
 	padding: 10px;
 	border-radius: 5px;
 	margin-left: 20px;
