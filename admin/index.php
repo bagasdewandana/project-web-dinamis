@@ -44,14 +44,14 @@
 
 		<section id="leftmenu">
 			<div class="row">
-				<div class="col-md-2 bg-leftmenu">
+				<div class="col-md-1 bg-leftmenu">
 					<div class="menu">
 						<ul>
-							<li><a href="?menu=index" class="<?php echo ($_GET['menu'] == 'index') ? 'active' : ''; ?>"><i class=" fa fa-dashboard"></i>Dashboard</a></li>
-							<li><a href="?menu=data_siswa" class="<?php echo ($_GET['menu'] == 'data_siswa') ? 'active' : ''; ?>"><i class=" fa fa-users"></i>Data Siswa</a></li>
-							<li><a href="?menu=data_uangkas" class="<?php echo ($_GET['menu'] == 'data_uangkas') ? 'active' : ''; ?>"><i class=" fa fa-money"></i>Data Uang Kas</a></li>
-							<li><a href="?menu=data_extra" class="<?php echo ($_GET['menu'] == 'data_extra') ? 'active' : ''; ?>"><i class=" fa fa-desktop"></i>Data Ekstra</a></li>
-							<li><a href="?menu=data_mapel" class="<?php echo ($_GET['menu'] == 'data_mapel') ? 'active' : ''; ?>"><i class=" fa fa-book"></i>Data Mapel</a></li>
+							<li><a href="?menu=index" class="<?php echo ($_GET['menu'] == 'index') ? 'active' : ''; ?>"><i class=" fa fa-dashboard"></i></a></li>
+							<li><a href="?menu=data_siswa" class="<?php echo ($_GET['menu'] == 'data_siswa') ? 'active' : ''; ?>"><i class=" fa fa-users"></i></a></li>
+							<li><a href="?menu=data_uangkas" class="<?php echo ($_GET['menu'] == 'data_uangkas') ? 'active' : ''; ?>"><i class=" fa fa-money"></i></a></li>
+							<li><a href="?menu=data_extra" class="<?php echo ($_GET['menu'] == 'data_extra') ? 'active' : ''; ?>"><i class=" fa fa-desktop"></i></a></li>
+							<li><a href="?menu=data_mapel" class="<?php echo ($_GET['menu'] == 'data_mapel') ? 'active' : ''; ?>"><i class=" fa fa-book"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -60,7 +60,7 @@
 		<section id="canvas">
 			<div class="row">
 				<div class="col-md-12 nav"></div>
-				<div class="col-md-2 left"></div>
+				<div class="col-md-1 left"></div>
 				<div class="col-md-10 canvas">
 					<div class="dashboard">
 						<?php 
