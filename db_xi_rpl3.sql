@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2018 at 06:28 PM
--- Server version: 10.1.30-MariaDB
--- PHP Version: 7.2.1
+-- Generation Time: 08 Mei 2018 pada 10.55
+-- Versi Server: 10.1.29-MariaDB
+-- PHP Version: 7.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_extra`
+-- Struktur dari tabel `tb_extra`
 --
 
 CREATE TABLE `tb_extra` (
@@ -36,7 +36,7 @@ CREATE TABLE `tb_extra` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_extra`
+-- Dumping data untuk tabel `tb_extra`
 --
 
 INSERT INTO `tb_extra` (`id_extra`, `nama_extra`, `pengajar_extra`, `icon_extra`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `tb_extra` (`id_extra`, `nama_extra`, `pengajar_extra`, `icon_extra`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_mapel`
+-- Struktur dari tabel `tb_mapel`
 --
 
 CREATE TABLE `tb_mapel` (
@@ -55,7 +55,7 @@ CREATE TABLE `tb_mapel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_mapel`
+-- Dumping data untuk tabel `tb_mapel`
 --
 
 INSERT INTO `tb_mapel` (`id_mapel`, `nama_mapel`) VALUES
@@ -64,7 +64,7 @@ INSERT INTO `tb_mapel` (`id_mapel`, `nama_mapel`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_pengeluaran`
+-- Struktur dari tabel `tb_pengeluaran`
 --
 
 CREATE TABLE `tb_pengeluaran` (
@@ -74,21 +74,10 @@ CREATE TABLE `tb_pengeluaran` (
   `jumlah_pengeluaran` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tb_pengeluaran`
---
-
-INSERT INTO `tb_pengeluaran` (`id_pengeluaran`, `nama_kebutuhan`, `id_bulan`, `jumlah_pengeluaran`) VALUES
-(3, 'Sapu', 6, 50000),
-(4, 'Lap Kaca', 5, 10000),
-(5, 'Kursi', 4, 20000),
-(7, 'Perpisahan', 7, 100000),
-(8, 'Makan', 8, 10000);
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_siswa`
+-- Struktur dari tabel `tb_siswa`
 --
 
 CREATE TABLE `tb_siswa` (
@@ -101,7 +90,7 @@ CREATE TABLE `tb_siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_siswa`
+-- Dumping data untuk tabel `tb_siswa`
 --
 
 INSERT INTO `tb_siswa` (`id_siswa`, `nama_siswa`, `nis_siswa`, `jenis_kelamin`, `agama_siswa`, `no_telp`) VALUES
@@ -121,7 +110,7 @@ INSERT INTO `tb_siswa` (`id_siswa`, `nama_siswa`, `nis_siswa`, `jenis_kelamin`, 
 (30, 'I Kadek Dwika Umbara Jaya', '3409', 'Laki-laki', 'Hindu', ''),
 (31, 'I Komang Agus Dana Artha', '3410', 'Laki-laki', 'Hindu', ''),
 (32, 'I Nyoman Arta Gunawan', '3411', 'Laki-laki', 'Hindu', ''),
-(33, 'I Wayan Adiya Semara Putra', '3412', 'Laki-laki', 'Hindu', ''),
+(33, 'I Wayan Aditya Semara Putra', '3412', 'Laki-laki', 'Hindu', ''),
 (34, 'Ida Bagus Anom Mardiana', '3414', 'Laki-laki', 'Hindu', ''),
 (35, 'Ida Bagus Sari Dhananjaya', '3415', 'Laki-laki', 'Hindu', ''),
 (36, 'Indra Setyawan', '3416', 'Laki-laki', 'Hindu', ''),
@@ -139,7 +128,18 @@ INSERT INTO `tb_siswa` (`id_siswa`, `nama_siswa`, `nis_siswa`, `jenis_kelamin`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_uangkas`
+-- Struktur dari tabel `tb_tugas`
+--
+
+CREATE TABLE `tb_tugas` (
+  `id_tugas` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_uangkas`
 --
 
 CREATE TABLE `tb_uangkas` (
@@ -151,54 +151,26 @@ CREATE TABLE `tb_uangkas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_uangkas`
+-- Dumping data untuk tabel `tb_uangkas`
 --
 
 INSERT INTO `tb_uangkas` (`id_uangkas`, `id_siswa`, `id_bulan`, `jumlah`, `date_uangkas`) VALUES
-(70, 21, 6, 10000, '2018-05-02 21:41:04'),
-(71, 22, 6, 10000, '2018-05-02 21:41:04'),
-(72, 23, 6, 10000, '2018-05-02 21:41:05'),
-(73, 24, 6, 10000, '2018-05-02 21:41:05'),
-(74, 25, 6, 10000, '2018-05-02 21:41:06'),
-(75, 26, 6, 10000, '2018-05-02 21:41:06'),
-(76, 27, 6, 10000, '2018-05-02 21:41:07'),
-(77, 28, 6, 10000, '2018-05-02 21:41:07'),
-(78, 29, 6, 10000, '2018-05-02 21:41:09'),
-(79, 30, 6, 10000, '2018-05-02 21:41:10'),
-(80, 31, 6, 10000, '2018-05-02 21:41:12'),
-(81, 32, 6, 10000, '2018-05-02 21:41:13'),
-(82, 33, 6, 10000, '2018-05-02 21:41:14'),
-(83, 34, 6, 10000, '2018-05-02 21:41:16'),
-(84, 35, 6, 10000, '2018-05-02 21:41:17'),
-(85, 17, 7, 10000, '2018-05-02 21:42:20'),
-(86, 18, 7, 10000, '2018-05-02 21:42:26'),
-(87, 19, 7, 10000, '2018-05-02 21:42:27'),
-(88, 20, 7, 10000, '2018-05-02 21:42:28'),
-(89, 17, 8, 10000, '2018-05-02 21:42:41'),
-(90, 18, 8, 10000, '2018-05-02 21:42:46'),
-(91, 19, 8, 10000, '2018-05-02 21:42:47'),
-(92, 20, 8, 10000, '2018-05-02 21:42:47'),
-(93, 21, 8, 10000, '2018-05-02 21:42:48'),
-(94, 22, 8, 10000, '2018-05-02 21:42:48'),
-(95, 23, 8, 10000, '2018-05-02 21:42:49'),
-(96, 24, 8, 10000, '2018-05-02 21:42:50'),
-(97, 25, 8, 10000, '2018-05-02 21:42:50'),
-(98, 26, 8, 10000, '2018-05-02 21:42:51'),
-(99, 27, 8, 10000, '2018-05-02 21:42:51'),
-(100, 17, 4, 10000, '2018-05-03 00:08:04'),
-(101, 18, 4, 10000, '2018-05-03 00:08:08'),
-(102, 19, 4, 10000, '2018-05-03 00:08:09'),
-(103, 20, 4, 10000, '2018-05-03 00:08:10'),
-(104, 21, 4, 10000, '2018-05-03 00:08:10'),
-(105, 22, 4, 10000, '2018-05-03 00:08:11'),
-(106, 17, 5, 10000, '2018-05-03 00:20:18'),
-(107, 18, 5, 10000, '2018-05-03 00:20:23'),
-(108, 19, 5, 10000, '2018-05-03 00:20:24');
+(109, 19, 5, 10000, '2018-05-07 13:56:02'),
+(110, 47, 5, 10000, '2018-05-07 13:56:14'),
+(111, 43, 5, 10000, '2018-05-07 15:39:19'),
+(112, 18, 5, 10000, '2018-05-08 14:09:47'),
+(113, 20, 5, 10000, '2018-05-08 14:11:46'),
+(114, 36, 5, 10000, '2018-05-08 14:12:03'),
+(115, 46, 5, 10000, '2018-05-08 14:12:19'),
+(116, 34, 5, 10000, '2018-05-08 14:12:50'),
+(117, 23, 5, 10000, '2018-05-08 14:13:05'),
+(118, 22, 5, 10000, '2018-05-08 14:15:30'),
+(119, 38, 5, 10000, '2018-05-08 14:16:10');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_user`
+-- Struktur dari tabel `tb_user`
 --
 
 CREATE TABLE `tb_user` (
@@ -210,7 +182,7 @@ CREATE TABLE `tb_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_user`
+-- Dumping data untuk tabel `tb_user`
 --
 
 INSERT INTO `tb_user` (`id_user`, `email_user`, `username`, `password`, `level_user`) VALUES
@@ -219,7 +191,8 @@ INSERT INTO `tb_user` (`id_user`, `email_user`, `username`, `password`, `level_u
 (5, 'devamahayanatop@gmail.com', 'devamahayana', '$2y$11$W5LqUhSVd9DpVv3Zp/1TfeDyrb.MXQlsxFuLCg0bfK9w7ivzaS2fS', 'Admin'),
 (6, 'wayanadityasemaraputra@gmail.com', 'adityasemaraputra', '$2y$11$vicbeM7IALlYmzBlEhWryulA65hnJgRE.HcVydLIuh72Cw4B9hkNW', 'Admin'),
 (7, 'deaayuagstn@yahoo.com', 'deaayuagstn', '$2y$11$CldGxq83O7W7341itWgQz.Iei5oZfw.QGHPtN8IA.UK1oeXXIwPGi', 'Admin'),
-(8, 'putriadhinda10@gmail.com', 'adhinda.rh', '$2y$11$RSZvHRIBFJjNpi1YxmNN4uT0NCtCWe3KjJ78z22XeA7Cl/KU0ZQLu', 'Admin');
+(8, 'putriadhinda10@gmail.com', 'adhinda.rh', '$2y$11$RSZvHRIBFJjNpi1YxmNN4uT0NCtCWe3KjJ78z22XeA7Cl/KU0ZQLu', 'Admin'),
+(9, 'ryanardito25@gmail.com', 'Ragazzo', '$2y$11$uYMxObUv/gSw.eJYvPzrkOgmhf977EFy8VU3cHX2KQnUntb4DudxG', 'Member');
 
 --
 -- Indexes for dumped tables
@@ -248,6 +221,12 @@ ALTER TABLE `tb_pengeluaran`
 --
 ALTER TABLE `tb_siswa`
   ADD PRIMARY KEY (`id_siswa`);
+
+--
+-- Indexes for table `tb_tugas`
+--
+ALTER TABLE `tb_tugas`
+  ADD PRIMARY KEY (`id_tugas`);
 
 --
 -- Indexes for table `tb_uangkas`
@@ -281,7 +260,7 @@ ALTER TABLE `tb_mapel`
 -- AUTO_INCREMENT for table `tb_pengeluaran`
 --
 ALTER TABLE `tb_pengeluaran`
-  MODIFY `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tb_siswa`
@@ -290,16 +269,22 @@ ALTER TABLE `tb_siswa`
   MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
+-- AUTO_INCREMENT for table `tb_tugas`
+--
+ALTER TABLE `tb_tugas`
+  MODIFY `id_tugas` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `tb_uangkas`
 --
 ALTER TABLE `tb_uangkas`
-  MODIFY `id_uangkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `id_uangkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
