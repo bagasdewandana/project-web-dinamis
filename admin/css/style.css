@@ -100,7 +100,7 @@ hr{
 
 .bg-navbar{
 	height: 75px;
-	background: #FFF;
+	background: #E2B512;
 	position: fixed;
 	z-index: 100;
 }
@@ -112,6 +112,7 @@ hr{
 	background: #FFF;
 	position: fixed;
 	z-index: 99;
+	box-shadow: 2px 2px 10px -1px #E2B512;
 }
 .nav{
 	height: 75px;
@@ -136,7 +137,7 @@ hr{
 	text-align: left;
 	line-height: 75px;
 	font-size: 24px;
-	color: black;
+	color: white;
 	letter-spacing: 2px;
 	text-decoration: none;
 }
@@ -218,16 +219,16 @@ hr{
 }
 
 .siswa th{
-	background: #23375a;
+	background: #e2b512;
 	color: #EAEAEA;
 }
 
 .siswa tr:nth-child(even){
-	background-color: #f5f5f5;
+	background-color: #fffdc4;
 }
 
 .siswa tr:nth-child(odd){
-	background-color: #EAEAEA;
+	background-color: #fff7a3;
 }
 
 .active{
@@ -252,7 +253,7 @@ hr{
 
 .btn-info{
 	float: right;
-	background: forestgreen;
+	background: #ccb71e;
 	width: 200px;
 	text-align: center;
 	height: 35px;
@@ -338,7 +339,7 @@ hr{
 }
 
 .dark{
-	background: #343A40 !important;
+	background: #E2B512 !important;
 	color: white !important;
 }
 
@@ -377,10 +378,13 @@ hr{
 }
 
 .btn-logout a{
-	color: #fff;
+	color: #E2B512;
 	text-decoration: none;
 	line-height: 80px;
-	background-color: #23375a;padding: 10px;border-radius: 5px;margin-left: 20px;
+	background-color: #FFF;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 20px;
 }
 
 

@@ -24,7 +24,7 @@
 					<td><?= $data_siswa['jenis_kelamin'] ?></td>
 					<td><?= $data_siswa['agama_siswa'] ?></td>
 					<td><?= $data_siswa['no_telp'] ?></td>
-					<td><a href="?menu=data_siswa&action=edit&id_siswa=<?= $data_siswa['id_siswa'] ?>" class="btn-primary btn-primaryrsp">Edit</a> <a href="?menu=data_siswa&action=delete&id_siswa=<?= $data_siswa['id_siswa'] ?>" class="btn-danger btn-dangerrsp">Hapus</a></td>
+					<td><a href="?menu=data_siswa&action=edit&id_siswa=<?= $data_siswa['id_siswa'] ?>" class="btn-primary block">Edit</a> <a href="?menu=data_siswa&action=delete&id_siswa=<?= $data_siswa['id_siswa'] ?>" class="btn-danger block">Hapus</a></td>
 				</tr>
 				<?php
 				$no++;
