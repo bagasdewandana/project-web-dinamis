@@ -31,8 +31,8 @@
 					<div class="col-lg-4 col-md-5">
 						<ul class="menu-kiri">
 							<li><a href="#">Beranda</a><div class="garis"></div></li>
-							<li><a href="#">Siswa</a><div class="garis"></div></li>
-							<li><a href="#">Uang Kas</a><div class="garis"></div></li>
+							<li><a href="siswa.php">Siswa</a><div class="garis"></div></li>
+							<li><a href="uangkas.php">Uang Kas</a><div class="garis"></div></li>
 						</ul>
 					</div> <!-- /col-4 -->
 					<div class="col-lg-4 col-md-2">
