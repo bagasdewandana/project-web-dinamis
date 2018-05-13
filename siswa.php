@@ -28,7 +28,7 @@
  				if ($query_siswa->num_rows > 0) {
  					while ($data_siswa = $query_siswa->fetch_assoc()) {
  						?>
- 						<div class="col-lg-3 main-holder">
+ 						<div class="col-lg-3 col-md-4 col-sm-12 main-holder">
 				 			<div id="main">
 					            <div id="image">
 					                <img src="img/siswa/user.png"/>
