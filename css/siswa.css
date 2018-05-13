@@ -229,7 +229,11 @@ html
     border-left: 250px solid transparent;
     z-index: -1;
 }
-#viewMore,#close{
+<<<<<<< HEAD
+.viewMore,.close{
+=======
+#viewMore{
+>>>>>>> parent of 9b653a1... Merge branch 'master' of https://github.com/premaagus/project-web-dinamis
     height: 30px;
     width: 30px;
     background-color: white;
@@ -242,10 +246,14 @@ html
     z-index: 99;
     cursor: pointer;
 }
-#close{
+<<<<<<< HEAD
+.close{
     top:125px;
 }
-#viewMore img,#close img{
+.viewMore img,.close img{
+=======
+#viewMore img{
+>>>>>>> parent of 9b653a1... Merge branch 'master' of https://github.com/premaagus/project-web-dinamis
     position: absolute;
     top:50%;
     left: 50%;
@@ -273,12 +281,13 @@ html
     left: 50%;
     transform: translateX(-50%);
 }
+<<<<<<< HEAD
 .aboutMe{
     height: 100px;
     width: 100%;
     background-color: #81B0F8;
     position: absolute;
-    top:-300px;
+    top:0px;
 }
 .aboutMe:before{
     content:'';
@@ -406,6 +415,8 @@ hr{
 }
 
 
+=======
+>>>>>>> parent of 9b653a1... Merge branch 'master' of https://github.com/premaagus/project-web-dinamis
 
 
 

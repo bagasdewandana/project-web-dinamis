@@ -12,7 +12,6 @@
  	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 
  	<script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/siswa.js"></script>
  <body>
  <div class="wrapper">
  	
@@ -26,20 +25,26 @@
  			<?php 
  				$query_siswa = $koneksi->query("SELECT * FROM tb_siswa ORDER BY nama_siswa ASC");
  				if ($query_siswa->num_rows > 0) {
- 					$no = 1;
  					while ($data_siswa = $query_siswa->fetch_assoc()) {
  						?>
  						<div class="col-lg-3 col-md-4 col-sm-12 main-holder">
 				 			<div id="main">
-					            <div id="image" class="image<?= $no ?>">
+					            <div id="image">
 					                <img src="img/siswa/user.png"/>
 					                <div id="wave"></div>
 					                <div id="wave2"></div>
 					            </div>
 					            
+<<<<<<< HEAD
 					            <div id="info" class="info<?= $no ?>">
-					                <div id="viewMore" class="viewMore<?= $no ?>">
-					                	<a><img  src="img/siswa/View%20More.png" width="70%"/></a></div>
+					                <div id="viewMore" class="viewMore"<?= $no ?>">
+					                	<a><img src="img/siswa/View%20More.png" width="70%"/></a></div>
+=======
+					            <div id="info">
+					                <div id="viewMore">
+					                	<a href="
+					                	admin/index.php"><img  src="img/siswa/View%20More.png" width="70%"/></a></div>
+>>>>>>> parent of 9b653a1... Merge branch 'master' of https://github.com/premaagus/project-web-dinamis
 					                <div id="name"><?= $data_siswa['nama_siswa'] ?></div>
 					                <div id="status"><?= '" ' . $data_siswa['quotes'] . ' "'?></div>
 					                <div id="social">
@@ -48,20 +53,34 @@
 					                    <img src="img/siswa/Twitter.png"/>
 					                </div>
 					            </div>
+<<<<<<< HEAD
 
-					            <div class="aboutMe aboutMe<?= $no ?>">
+<<<<<<< HEAD
+<<<<<<< HEAD
+					            <div class="aboutMe">
+=======
+					            <div class="aboutMe"<?= $no ?>">
+>>>>>>> parent of 1ae237f... Revert "das"
+=======
+					            <div class="aboutMe">
+>>>>>>> parent of 113f840... fixing siswa.php
 					                <h2>ABOUT ME</h2>
 					                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+					                <div class="close"><img src="img/siswa/Close.png" width="65%"/></div>
+
 					                <div id="close" class="close<?= $no ?>"><img src="img/siswa/Close.png" width="65%"/></div>
+
 					            </div>
+=======
+>>>>>>> parent of 9b653a1... Merge branch 'master' of https://github.com/premaagus/project-web-dinamis
 					            
 					            
 					            
 					            
-					        </div><!-- main -->
+					        </div>
 				 		</div><!--col-lg-3 main-holder-->
  						<?php
- 						$no++;
  					}
  				}
  				else{
@@ -74,6 +93,7 @@
  </div><!--wrapper-->
  </body>
  </html>
+<<<<<<< HEAD
 
 <script type="text/javascript">
 	$(document).ready(function(){ 
@@ -82,11 +102,17 @@
 		for($i=1;$i<=$query_siswa->num_rows;$i++){
 			?>
 				$(".viewMore<?= $i ?>").click(function(){
-					$(".aboutMe<?= $i ?>").animate({top:"0px"});
+					$(".info<?= $i ?>").animate({top:"460px"}) ;
+					$(".aboutMe<?= $i ?>").animate({top:"100px"});
+				    $(".image<?= $i ?>").animate({left:"250px"});
+				    $(".project<?= $i ?>").animate({left:"0px"});
 				});
 
 				$(".close<?= $i ?>").click(function(){
-			        $(".aboutMe<?= $i ?>").animate({top:"-300px"});
+			        $(".info<?= $i ?>").animate({top:"280px"}) ;
+			        $(".aboutMe<?= $i ?>").animate({top:"-160px"});
+			        $(".image<?= $i ?>").animate({left:"0px"});
+			        $(".project<?= $i ?>").animate({left:"-250px"});
     			}); 
 			<?php
 		}
@@ -111,3 +137,5 @@
     
 });
 </script>
+=======
+>>>>>>> parent of 9b653a1... Merge branch 'master' of https://github.com/premaagus/project-web-dinamis
