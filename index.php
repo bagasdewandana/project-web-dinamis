@@ -1,3 +1,7 @@
+<?php 
+  require_once 'koneksi/koneksi.php';
+ ?>
+
 <!DOCTYPE html>
 <html>
   <head>
