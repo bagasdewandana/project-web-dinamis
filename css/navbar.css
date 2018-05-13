@@ -141,6 +141,7 @@ ul.menu-kiri li a, ul.menu-kanan li a{
 	background: url('../img/31.png');
 	margin-top: 20px;
 	background-size: cover;
+	margin: 20px auto;
 }
 
 .menu-tengah p{
