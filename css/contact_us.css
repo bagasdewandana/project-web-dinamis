@@ -35,6 +35,11 @@
     src: url(../fonts/Lovelo-Black.otf);
 }
 
+@font-face{
+	font-family: free;
+	src: url(../fonts/free.ttf);
+}
+
 body
 {
 	margin: 0;
@@ -215,6 +220,10 @@ html
 	padding: 0;
 	width: 100%;
 }
+.bg-footer h3{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
 .footer-atas{
 	margin: 0;
 	padding: 20px;
@@ -224,6 +233,7 @@ html
 }
 .footer-atas p{
 	padding: 5px 0;
+	letter-spacing: 1px;
 }
 .follow ul{
 	list-style: none;
@@ -244,6 +254,10 @@ html
 	text-align: center;
 	color: #fff;
 	background-color: #d0a301;
+	font-family: free;
+	font-size: 20px;
+	font-weight:bold;
+	letter-spacing: 1.5px
 }
 .footer-bawah p{
 	font-size: 0.8em;

@@ -188,7 +188,7 @@
         <div class="col-lg-12">
           <div class="footer-atas">
             <h3>Repalti</h3>
-            <p>Barbaric People Here</p>
+            <p>Barbaric People Here !</p>
             <div class="follow">
               <ul>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
