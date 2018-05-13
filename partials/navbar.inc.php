@@ -43,10 +43,6 @@
 					<div class="col-lg-4 col-md-5">
 						<ul class="menu-kanan">
 							<?php
-<<<<<<< HEAD
-							
-=======
->>>>>>> 07afe3d7d6b1c4d17df27e53175e1046d32ab890
 								if (isset($_SESSION['user_login'])) {
 									?>
 									<li><a href="logout.php">Log Out</a><div class="garis"></div></li>
