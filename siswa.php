@@ -8,7 +8,7 @@
  <html>
  <head>
  	<title>Siswa/</title>
- 	<link rel="stylesheet" type="text/css" href="css/main.css">
+ 	<link rel="stylesheet" type="text/css" href="css/siswa.css">
  	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 
  	<script src="js/jquery-1.10.2.min.js"></script>
@@ -36,18 +36,33 @@
 					                <div id="wave2"></div>
 					            </div>
 					            
+<<<<<<< HEAD
+					            <div id="info" class="info<?= $no ?>">
+					                <div id="viewMore" class="viewMore<?= $no ?>"><img src="img/siswa/View%20More.png" width="70%"/></div>
+					            <div id="info">
+					                <div id="viewMore">
+					                	<a href="
+					                	admin/index.php"><img  src="img/siswa/View%20More.png" width="70%"/></a></div>
+
+=======
 					            <div id="info">
 					                <div id="viewMore"><img src="img/siswa/View%20More.png" width="70%"/></div>
+>>>>>>> parent of 2346a80... adding js siswa
 					                <div id="name"><?= $data_siswa['nama_siswa'] ?></div>
-					                <div id="status">WEB | GRAPHIC | UI/UX</div>
+					                <div id="status"><?= '" ' . $data_siswa['quotes'] . ' "'?></div>
 					                <div id="social">
 					                    <img src="img/siswa/Facebook.png"/>
-					                    <img src="img/siswa/Dribbble.png"/>
+					                    <img src="img/siswa/ig.png"/ width="24px" height="24px" style="margin-top: 10px;">
 					                    <img src="img/siswa/Twitter.png"/>
 					                </div>
 					            </div>
 					            
+<<<<<<< HEAD
+
+					            <div id="aboutMe" class="aboutMe<?= $no ?>">
+=======
 					            <div id="aboutMe">
+>>>>>>> parent of 2346a80... adding js siswa
 					                <h2>ABOUT ME</h2>
 					                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 					                <div id="close"><img src="img/siswa/Close.png" width="65%"/></div>
@@ -101,6 +116,7 @@
  	</div><!--grid-->
  </div><!--wrapper-->
  </body>
+<<<<<<< HEAD
  <script type="text/javascript">
   $(document).ready(function(){
     $bg_menu_li = $('.menu-kiri li a, .menu-kanan li a');

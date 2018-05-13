@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
 $(document).ready(function(){
     $("#viewMore").click(function(){
         $("#info").animate({top:"460px"}) ;
@@ -13,6 +17,7 @@ $(document).ready(function(){
         $("#project").animate({left:"-250px"});
     }); 
 });
+>>>>>>> parent of 2346a80... adding js siswa
 
 
 
@@ -21,3 +26,7 @@ $(document).ready(function(){
 
 
 
+<<<<<<< HEAD
+>>>>>>> 74841eac25cb7f4634489f66df15c5156ef74de4
+=======
+>>>>>>> parent of 2346a80... adding js siswa
