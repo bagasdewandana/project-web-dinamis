@@ -21,7 +21,7 @@
 					<li>Uang Kas<div class="line"></div></li>
 					<li>Login<div class="line"></div></li>
 				</ul>
-				<div id="close">
+				<div id="close_nav">
 					<i class="fa fa-times"></i>
 				</div>
 			</div>

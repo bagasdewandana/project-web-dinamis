@@ -26,20 +26,20 @@
  			<?php 
  				$query_siswa = $koneksi->query("SELECT * FROM tb_siswa ORDER BY nama_siswa ASC");
  				if ($query_siswa->num_rows > 0) {
+ 					$no = 1;
  					while ($data_siswa = $query_siswa->fetch_assoc()) {
  						?>
  						<div class="col-lg-3 col-md-4 col-sm-12 main-holder">
 				 			<div id="main">
-					            <div id="image">
+					            <div id="image" class="image<?= $no ?>">
 					                <img src="img/siswa/user.png"/>
 					                <div id="wave"></div>
 					                <div id="wave2"></div>
 					            </div>
 					            
-					            <div id="info">
-					                <div id="viewMore">
-					                	<a href="
-					                	admin/index.php"><img  src="img/siswa/View%20More.png" width="70%"/></a></div>
+					            <div id="info" class="info<?= $no ?>">
+					                <div id="viewMore" class="viewMore<?= $no ?>">
+					                	<a><img  src="img/siswa/View%20More.png" width="70%"/></a></div>
 					                <div id="name"><?= $data_siswa['nama_siswa'] ?></div>
 					                <div id="status"><?= '" ' . $data_siswa['quotes'] . ' "'?></div>
 					                <div id="social">
@@ -55,6 +55,7 @@
 					        </div>
 				 		</div><!--col-lg-3 main-holder-->
  						<?php
+ 						$no++;
  					}
  				}
  				else{
@@ -67,3 +68,46 @@
  </div><!--wrapper-->
  </body>
  </html>
+
+<script type="text/javascript">
+	$(document).ready(function(){ 
+	var numRows = <?= $query_siswa->num_rows ?>;
+	<?php  
+		for($i=1;$i<=$query_siswa->num_rows;$i++){
+			?>
+				$(".viewMore<?= $i ?>").click(function(){
+					$(".info<?= $i ?>").animate({top:"460px"}) ;
+					$(".aboutMe<?= $i ?>").animate({top:"0px"});
+				    $(".image<?= $i ?>").animate({left:"250px"});
+				    $(".project<?= $i ?>").animate({left:"0px"});
+				});
+
+				$(".close<?= $i ?>").click(function(){
+			        $(".info<?= $i ?>").animate({top:"280px"}) ;
+			        $(".aboutMe<?= $i ?>").animate({top:"-160px"});
+			        $(".image<?= $i ?>").animate({left:"0px"});
+			        $(".project<?= $i ?>").animate({left:"-250px"});
+    			}); 
+			<?php
+		}
+	?>
+	// for(var i=1;i<=numRows;i++){
+	// 	var viewMore = ".viewMore" + i;
+	// 	var info = ".info" + i;
+	// 	var aboutMe = ".aboutMe" + i;
+	// 	var image = ".image" + i;
+	// 	var project = ".project" + i;
+		
+	// }
+    
+    // $(".viewMore").click(function(e){
+    //     console.log(e);
+    //     // $(".info").animate({top:"460px"}) ;
+    //     // $(".aboutMe").animate({top:"0px"});
+    //     // $(".image").animate({left:"250px"});
+    //     // $(".project").animate({left:"0px"});
+    // });
+    
+    
+});
+</script>

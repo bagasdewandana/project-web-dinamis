@@ -8,7 +8,7 @@ $(document).ready(function(){
         setTimeout(showMenu,100);
    });
     
-    $("#close").click(function(){
+    $("#close_nav").click(function(){
             $("#MainMenu").css("-webkit-clip-path","polygon(0 0,0% 0,100% 100%,0% 100%)");
             function hideMenu(){
                     $("#MainMenu").css("left","-300px");
