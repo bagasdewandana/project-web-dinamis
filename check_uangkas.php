@@ -53,7 +53,6 @@
 		<th>Bulan</th>
 		<th>Tanggal Input</th>
 		<th>Jumlah</th>
-		<th>Action</th>
 	</tr>
 
 	<?php 
@@ -75,7 +74,6 @@
 					<td><?= $bulan ?></td>
 					<td><?= date('d-m-Y', strtotime($data_uangkas['date_uangkas'])) ?></td>
 					<td>Rp. <?= number_format($data_uangkas['jumlah']) ?></td>
-					<td><a href="?menu=data_uangkas&action=delete&id_uangkas=<?= $data_uangkas['id_uangkas'] ?>" class="btn-danger">Hapus</a></td>
 				</tr>
 				<?php
 				$no++;
@@ -103,7 +101,6 @@
 								<td><?= $bulan ?></td>
 								<td>-</td>
 								<td>Rp. 0</td>
-								<td><a href="?menu=data_uangkas&action=add&id_siswa=<?= $data_belumbayar['id_siswa'] ?>&id_bulan=<?= $id_bulan ?>" class="btn-primary">Bayar</a></td>
 							</tr>
 						<?php
 						$no++;
