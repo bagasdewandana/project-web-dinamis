@@ -30,6 +30,24 @@
  		<?php 
  			require_once 'partials/navbar.inc.php';
  		 ?>
+
+ 		 <div class="bg-tugas row">
+ 		 	<div class="col-lg-12 col-md-12 col-sm-12 ">
+ 		 		<div class="max-content">
+ 		 			<div class="tugas">
+ 		 				<div class="col-lg-6 col-md-6 col-sm-12">
+ 		 					<div class="to-do">
+ 		 						<i class="fas fa-code"></i>
+ 		 					</div><!-- to-do -->
+	 		 			</div><!-- col-lg-md-6 sm-12 -->
+	 		 			<div class="col-lg-6 col-md-6 col-sm-12">
+	 		 				
+	 		 			</div><!-- col-lg-md-6 sm-12 -->
+ 		 			</div><!-- tugas -->
+ 		 		</div><!-- max-content -->
+ 		 	</div><!-- col-lg-12 -->
+ 		 </div><!-- bg-tugas -->
+
  	</div><!-- wrapper -->
  </body>
  </html>
