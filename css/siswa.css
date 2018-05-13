@@ -278,7 +278,7 @@ html
     width: 100%;
     background-color: #81B0F8;
     position: absolute;
-    top:-300px;
+    top:0px;
 }
 .aboutMe:before{
     content:'';
