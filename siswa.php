@@ -37,7 +37,7 @@
 					            </div>
 					            
 					            <div id="info" class="info<?= $no ?>">
-					                <div id="viewMore" class="viewMore"<?= $no ?>">
+					                <div id="viewMore" class="viewMore viewMore<?= $no ?>">
 					                	<a><img src="img/siswa/View%20More.png" width="70%"/></a></div>
 					                <div id="name"><?= $data_siswa['nama_siswa'] ?></div>
 					                <div id="status"><?= '" ' . $data_siswa['quotes'] . ' "'?></div>
@@ -48,11 +48,11 @@
 					                </div>
 					            </div>
 
-					            <div class="aboutMe <?= $no ?>">
+					            <div class="aboutMe aboutMe<?= $no ?>">
 					                <h2>ABOUT ME</h2>
 					                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 
-					                <div class="close"><img src="img/siswa/Close.png" width="65%"/></div>
+					                <div class="close close<?= $no ?>"><img src="img/siswa/Close.png" width="65%"/></div>
 
 					                <div id="close" class="close<?= $no ?>"><img src="img/siswa/Close.png" width="65%"/></div>
 
