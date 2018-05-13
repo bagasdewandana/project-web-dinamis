@@ -2,7 +2,12 @@
 	if (isset($_GET['id_siswa']) && !is_null($_GET['id_siswa'])) {
 		$id_siswa = $_GET['id_siswa'];
 		$query_data_siswa = $koneksi->query("SELECT * FROM tb_siswa WHERE id_siswa = $id_siswa");
-		$data_siswa = $query_data_siswa->fetch_assoc();
+		if ($query_data_siswa->num_rows > 0) {
+			$data_siswa = $query_data_siswa->fetch_assoc();
+		}
+		else{
+			header('location: index.php');
+		}
 	}
 	else{
 		header('location: index.php');

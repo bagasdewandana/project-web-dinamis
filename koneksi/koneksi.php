@@ -1,7 +1,7 @@
 <?php 
 
 	date_default_timezone_set('Asia/Makassar');
-	session_start();
+	@session_start();
 	$db_user = 'root';
 	$db_host = 'localhost';
 	$db_password = '';
