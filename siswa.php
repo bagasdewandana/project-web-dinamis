@@ -48,7 +48,7 @@
 					                </div>
 					            </div>
 
-					            <div class="aboutMe"<?= $no ?>">
+					            <div class="aboutMe <?= $no ?>">
 					                <h2>ABOUT ME</h2>
 					                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 

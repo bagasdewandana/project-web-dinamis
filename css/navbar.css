@@ -311,7 +311,7 @@ ul li:hover .garis{
 	transform: translate(-50%);
 }
 
-#close_nav{
+#close{
 	position: absolute;
 	bottom: 100px;
 	left: 50%;
@@ -319,7 +319,7 @@ ul li:hover .garis{
 	cursor: pointer;
 }
 
-#close_nav i{
+#close i{
 	color: #fff;
 	border: 1px solid #fff;
 	border-radius: 50%;

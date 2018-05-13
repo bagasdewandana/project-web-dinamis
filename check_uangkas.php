@@ -1,5 +1,5 @@
 <?php 
-	require_once 'koneksi/koneksi.php';
+	require_once '../koneksi/koneksi.php';
 	$id_bulan = $_GET['id_bulan'];
 	$query_uangkas = $koneksi->query("SELECT * FROM tb_uangkas as a INNER JOIN tb_siswa as b ON a.id_siswa = b.id_siswa WHERE a.id_bulan = $id_bulan");
 	$data_uangkas = $query_uangkas->fetch_assoc();
@@ -53,6 +53,7 @@
 		<th>Bulan</th>
 		<th>Tanggal Input</th>
 		<th>Jumlah</th>
+		<th>Action</th>
 	</tr>
 
 	<?php 
@@ -74,6 +75,7 @@
 					<td><?= $bulan ?></td>
 					<td><?= date('d-m-Y', strtotime($data_uangkas['date_uangkas'])) ?></td>
 					<td>Rp. <?= number_format($data_uangkas['jumlah']) ?></td>
+					<td><a href="?menu=data_uangkas&action=delete&id_uangkas=<?= $data_uangkas['id_uangkas'] ?>" class="btn-danger">Hapus</a></td>
 				</tr>
 				<?php
 				$no++;
@@ -101,6 +103,7 @@
 								<td><?= $bulan ?></td>
 								<td>-</td>
 								<td>Rp. 0</td>
+								<td><a href="?menu=data_uangkas&action=add&id_siswa=<?= $data_belumbayar['id_siswa'] ?>&id_bulan=<?= $id_bulan ?>" class="btn-primary">Bayar</a></td>
 							</tr>
 						<?php
 						$no++;
