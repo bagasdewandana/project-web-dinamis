@@ -49,7 +49,7 @@
 					                </div>
 					            </div>
 
-					            <div class="aboutMe">
+					            <div class="aboutMe aboutMe<?= $no ?>">
 					                <h2>ABOUT ME</h2>
 					                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 					                <div id="close" class="close<?= $no ?>"><img src="img/siswa/Close.png" width="65%"/></div>
@@ -82,17 +82,11 @@
 		for($i=1;$i<=$query_siswa->num_rows;$i++){
 			?>
 				$(".viewMore<?= $i ?>").click(function(){
-					$(".info<?= $i ?>").animate({top:"460px"}) ;
-					$(".aboutMe<?= $i ?>").animate({top:"100px"});
-				    $(".image<?= $i ?>").animate({left:"250px"});
-				    $(".project<?= $i ?>").animate({left:"0px"});
+					$(".aboutMe<?= $i ?>").animate({top:"0px"});
 				});
 
 				$(".close<?= $i ?>").click(function(){
-			        $(".info<?= $i ?>").animate({top:"280px"}) ;
-			        $(".aboutMe<?= $i ?>").animate({top:"-160px"});
-			        $(".image<?= $i ?>").animate({left:"0px"});
-			        $(".project<?= $i ?>").animate({left:"-250px"});
+			        $(".aboutMe<?= $i ?>").animate({top:"-300px"});
     			}); 
 			<?php
 		}
