@@ -36,9 +36,12 @@
  		 		<div class="max-content">
  		 			<div class="tugas">
  		 				<div class="col-lg-6 col-md-6 col-sm-12">
- 		 					<div class="to-do">
- 		 						<i class="fas fa-code"></i>
- 		 					</div><!-- to-do -->
+ 		 					<div class="col-lg-6">
+ 		 						<div class="todo">
+ 		 							<i class="fas fa-code"></i>
+ 		 							<p>Project - Web Dinamis</p>
+ 		 						</div>
+ 		 					</div><!-- col-lg-6 -->
 	 		 			</div><!-- col-lg-md-6 sm-12 -->
 	 		 			<div class="col-lg-6 col-md-6 col-sm-12">
 	 		 				
