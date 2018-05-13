@@ -1,5 +1,5 @@
 <?php 
-	require_once '../koneksi/koneksi.php';
+	require_once 'koneksi/koneksi.php';
 	$id_bulan = $_GET['id_bulan'];
 	$query_uangkas = $koneksi->query("SELECT * FROM tb_uangkas as a INNER JOIN tb_siswa as b ON a.id_siswa = b.id_siswa WHERE a.id_bulan = $id_bulan");
 	$data_uangkas = $query_uangkas->fetch_assoc();
