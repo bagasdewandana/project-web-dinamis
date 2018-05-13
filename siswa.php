@@ -56,10 +56,14 @@
 <<<<<<< HEAD
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					            <div class="aboutMe">
 =======
 					            <div class="aboutMe"<?= $no ?>">
 >>>>>>> parent of 1ae237f... Revert "das"
+=======
+					            <div class="aboutMe">
+>>>>>>> parent of 113f840... fixing siswa.php
 					                <h2>ABOUT ME</h2>
 					                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 
