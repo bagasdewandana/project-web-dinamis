@@ -143,3 +143,16 @@ html
 	width: 90%;
 	max-width: 90%;
 }
+
+.bg-tugas{
+	max-width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+.tugas{
+	width: 100%;
+	height: 100vh;
+}
+
