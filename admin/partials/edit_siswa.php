@@ -50,6 +50,10 @@
 		<input type="number" name="no_telp" value="<?= $data_siswa['no_telp'] ?>">
 	</div>
 	<div class="form-group">
+		<label>Quotes</label>
+		<input type="text" name="quotes" value="<?= $data_siswa['quotes'] ?>">
+	</div>
+	<div class="form-group">
 		<button class="btn btn-primary float-right" type="submit" name="btn_submit">Ubah</button>
 	</div>
 </form>
