@@ -43,42 +43,41 @@
 							$bulan = $data_uangkas['id_bulan'];
 							$id_bulan = $data_uangkas['id_bulan'];
 							if ($bulan == 1) {
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Januari</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Januari</a>";
 							}
 							else if ($bulan == 2){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Februari</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Februari</a>";
 							}
 							else if ($bulan == 3){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Maret</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Maret</a>";
 							}
 							else if ($bulan == 4){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>April</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>April</a>";
 							}
 							else if ($bulan == 5){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Mei</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Mei</a>";
 							}
 							else if ($bulan == 6){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Juni</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Juni</a>";
 							}
 							else if ($bulan == 7){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Juli</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Juli</a>";
 							}
 							else if ($bulan == 8){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Agustus</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Agustus</a>";
 							}
 							else if ($bulan == 9){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>September</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>September</a>";
 							}
 							else if ($bulan == 10){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Oktober</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Oktober</a>";
 							}
 							else if ($bulan == 11){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>November</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>November</a>";
 							}
 							else if ($bulan == 12){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Desember</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Desember</a>";
 							}
-
 							?>
 							<tr>
 								<td><?= $no ?></td>
@@ -127,40 +126,40 @@
 							$bulan = $data_pengeluaran['id_bulan'];
 							$id_bulan = $data_pengeluaran['id_bulan'];
 							if ($bulan == 1) {
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Januari</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Januari</a>";
 							}
 							else if ($bulan == 2){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Februari</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Februari</a>";
 							}
 							else if ($bulan == 3){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Maret</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Maret</a>";
 							}
 							else if ($bulan == 4){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>April</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>April</a>";
 							}
 							else if ($bulan == 5){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Mei</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Mei</a>";
 							}
 							else if ($bulan == 6){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Juni</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Juni</a>";
 							}
 							else if ($bulan == 7){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Juli</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Juli</a>";
 							}
 							else if ($bulan == 8){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Agustus</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Agustus</a>";
 							}
 							else if ($bulan == 9){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>September</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>September</a>";
 							}
 							else if ($bulan == 10){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Oktober</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Oktober</a>";
 							}
 							else if ($bulan == 11){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>November</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>November</a>";
 							}
 							else if ($bulan == 12){
-								$bulan = "<a href='check_uangkas.php?id_bulan=$bulan'>Desember</a>";
+								$bulan = "<a href='?menu=data_uangkas&action=check&id_bulan=$bulan'>Desember</a>";
 							}
 							?>
 							<tr>

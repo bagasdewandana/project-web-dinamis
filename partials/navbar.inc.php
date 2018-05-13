@@ -21,7 +21,7 @@
 					<li>Uang Kas<div class="line"></div></li>
 					<li>Login<div class="line"></div></li>
 				</ul>
-				<div id="close_nav">
+				<div id="close">
 					<i class="fa fa-times"></i>
 				</div>
 			</div>
@@ -30,7 +30,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="col-lg-4 col-md-5">
 						<ul class="menu-kiri">
-							<li><a href="index.php">Beranda</a><div class="garis"></div></li>
+							<li><a href="#">Beranda</a><div class="garis"></div></li>
 							<li><a href="siswa.php">Siswa</a><div class="garis"></div></li>
 							<li><a href="uangkas.php">Uang Kas</a><div class="garis"></div></li>
 						</ul>
@@ -47,14 +47,14 @@
 									?>
 									<li><a href="logout.php">Log Out</a><div class="garis"></div></li>
 									<li><a href="member/index.php"><?= $_SESSION['user_login']['username'] ?></a><div class="garis"></div></li>
-									<li><a href="tugas.php">Tugas</a><div class="garis"></div></li>
+									<li><a href="#">Tugas</a><div class="garis"></div></li>
 									<?php
 								}
 								else{
 									?>
 									<li><a href="login.php">Login</a><div class="garis"></div></li>
 									<li><a href="#">Jadwal</a><div class="garis"></div></li>
-									<li><a href="tugas.php">Tugas</a><div class="garis"></div></li>
+									<li><a href="#">Tugas</a><div class="garis"></div></li>
 									<?php
 								}
 							 ?>

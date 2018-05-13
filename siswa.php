@@ -25,20 +25,26 @@
  			<?php 
  				$query_siswa = $koneksi->query("SELECT * FROM tb_siswa ORDER BY nama_siswa ASC");
  				if ($query_siswa->num_rows > 0) {
- 					$no = 1;
  					while ($data_siswa = $query_siswa->fetch_assoc()) {
  						?>
  						<div class="col-lg-3 col-md-4 col-sm-12 main-holder">
 				 			<div id="main">
-					            <div id="image" class="image<?= $no ?>">
+					            <div id="image">
 					                <img src="img/siswa/user.png"/>
 					                <div id="wave"></div>
 					                <div id="wave2"></div>
 					            </div>
 					            
+<<<<<<< HEAD
 					            <div id="info" class="info<?= $no ?>">
 					                <div id="viewMore" class="viewMore"<?= $no ?>">
 					                	<a><img src="img/siswa/View%20More.png" width="70%"/></a></div>
+=======
+					            <div id="info">
+					                <div id="viewMore">
+					                	<a href="
+					                	admin/index.php"><img  src="img/siswa/View%20More.png" width="70%"/></a></div>
+>>>>>>> parent of 9b653a1... Merge branch 'master' of https://github.com/premaagus/project-web-dinamis
 					                <div id="name"><?= $data_siswa['nama_siswa'] ?></div>
 					                <div id="status"><?= '" ' . $data_siswa['quotes'] . ' "'?></div>
 					                <div id="social">
@@ -47,6 +53,7 @@
 					                    <img src="img/siswa/Twitter.png"/>
 					                </div>
 					            </div>
+<<<<<<< HEAD
 
 					            <div class="aboutMe">
 					                <h2>ABOUT ME</h2>
@@ -57,14 +64,15 @@
 					                <div id="close" class="close<?= $no ?>"><img src="img/siswa/Close.png" width="65%"/></div>
 >>>>>>> e7e3be1b702181a90f136a91da127f65d35548f2
 					            </div>
+=======
+>>>>>>> parent of 9b653a1... Merge branch 'master' of https://github.com/premaagus/project-web-dinamis
 					            
 					            
 					            
 					            
-					        </div><!-- main -->
+					        </div>
 				 		</div><!--col-lg-3 main-holder-->
  						<?php
- 						$no++;
  					}
  				}
  				else{
@@ -77,6 +85,7 @@
  </div><!--wrapper-->
  </body>
  </html>
+<<<<<<< HEAD
 
 <script type="text/javascript">
 	$(document).ready(function(){ 
@@ -120,3 +129,5 @@
     
 });
 </script>
+=======
+>>>>>>> parent of 9b653a1... Merge branch 'master' of https://github.com/premaagus/project-web-dinamis
