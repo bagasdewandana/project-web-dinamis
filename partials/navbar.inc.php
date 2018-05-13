@@ -43,7 +43,6 @@
 					<div class="col-lg-4 col-md-5">
 						<ul class="menu-kanan">
 							<?php
-								session_start(); 
 								if (isset($_SESSION['user_login'])) {
 									?>
 									<li><a href="logout.php">Log Out</a><div class="garis"></div></li>
@@ -67,3 +66,35 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+        $bg_menu_li = $('.menu-kiri li a, .menu-kanan li a');
+        $menu_line = $('#MenuLine, #MenuLine1, #MenuLine2');
+        $menu_line.css({'background-color': 'black'});
+        $bg_menu_li.css({'color':'black'});
+      });
+      $(window).scroll(function(){
+        $bg_menu = $('.bg-menu');
+        $wScroll = $(window).scrollTop();
+        $menu_height = $bg_menu.outerHeight();
+        $bg_menu_li = $('.menu-kiri li a, .menu-kanan li a');
+        $top_logo = $('.top-logo');
+        $garis = $('.garis');
+        $menu_line = $('#MenuLine, #MenuLine1, #MenuLine2');
+        if ($wScroll>$menu_height) {
+          $bg_menu_li.css({'color':'white'});
+          $garis.css({'background': 'white'});
+          $menu_line.css({'background-color': 'white'});
+          $bg_menu.css({'background':'#E2B512'});
+          $top_logo.css({'background-image':"url(img/3.png)"});
+        }
+        else{
+          $bg_menu_li.css({'color':'#000'});
+          $garis.css({'background': '#000'});
+          $menu_line.css({'background-color': 'black'});
+          $bg_menu.css({'background':'transparent'});
+          $top_logo.css({'background-image':"url(img/31.png)"});
+        }
+      });
+    </script>
