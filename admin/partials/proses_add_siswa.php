@@ -6,8 +6,9 @@
 		$jenis_kelamin 	= $_POST['jenis_kelamin'];
 		$agama_siswa	= $_POST['agama_siswa'];
 		$no_telp		= $_POST['no_telp'];
+		$quotes		 	= $_POST['quotes'];
 
-		$query_add = $koneksi->query("INSERT INTO tb_siswa VALUES(NULL, '$nama_siswa','$nis_siswa', '$jenis_kelamin', '$agama_siswa', '$no_telp')");
+		$query_add = $koneksi->query("INSERT INTO tb_siswa VALUES(NULL, '$nama_siswa','$nis_siswa', '$jenis_kelamin', '$agama_siswa', '$no_telp', '$quotes')");
 		if ($query_add) {
 			echo "<script>alert('Sukses Tambah Data Siswa!');location.href='../index.php?menu=data_siswa'</script>";
 		}
