@@ -190,5 +190,23 @@ html
 	margin-top: 30%;
 	width: 90%;
 	height: 50vh;
-	background-color: #eaeaea;
+	background-color: #F7F9FC;
+	padding-top: 50px;
+}
+
+.todo_add label{
+	margin: 10px;
+	display: block;
+	margin-left: 50px;
+}
+
+.todo_add input{
+	width: 80%;
+	margin-left: 50px;
+	padding: 5px 10px;
+}
+.todo_add select{
+	width: 80%;
+	margin-left: 50px;
+	padding: 5px 10px;
 }

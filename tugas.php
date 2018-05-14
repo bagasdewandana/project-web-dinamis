@@ -55,7 +55,11 @@
 	 		 				<form accept="todo.php" method="POST">
 	 		 					<div class="todo_add">
 	 		 						<label>Font Awesome Icon</label>
-	 		 						<input type="text" name="fa">
+	 		 						<input type="text" name="fa" placeholder="ex. fas fa-code">
+	 		 						<label>Jenis Tugas</label>
+	 		 						<select><option value="Project">Project</option></select>
+	 		 						<label>Pelajaran</label>
+	 		 						<select><option value="Web Dinamis">Web Dinamis</option></select>
 	 		 					</div><!-- todo_add -->
 	 		 				</form>
 	 		 			</div><!-- col-lg-md-6 sm-12 -->
