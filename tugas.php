@@ -53,7 +53,10 @@
 	 		 			</div><!-- col-lg-md-6 sm-12 -->
 	 		 			<div class="col-lg-6 col-md-6 col-sm-12">
 	 		 				<form accept="todo.php" method="POST">
-	 		 					
+	 		 					<div class="todo_add">
+	 		 						<label>Font Awesome Icon</label>
+	 		 						<input type="text" name="fa">
+	 		 					</div><!-- todo_add -->
 	 		 				</form>
 	 		 			</div><!-- col-lg-md-6 sm-12 -->
  		 			</div><!-- tugas -->

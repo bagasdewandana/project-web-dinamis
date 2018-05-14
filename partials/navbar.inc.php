@@ -47,14 +47,14 @@
 									?>
 									<li><a href="logout.php">Log Out</a><div class="garis"></div></li>
 									<li><a href="member/index.php"><?= $_SESSION['user_login']['username'] ?></a><div class="garis"></div></li>
-									<li><a href="#">Tugas</a><div class="garis"></div></li>
+									<li><a href="tugas.php">Tugas</a><div class="garis"></div></li>
 									<?php
 								}
 								else{
 									?>
 									<li><a href="login.php">Login</a><div class="garis"></div></li>
 									<li><a href="#">Jadwal</a><div class="garis"></div></li>
-									<li><a href="#">Tugas</a><div class="garis"></div></li>
+									<li><a href="tugas.php">Tugas</a><div class="garis"></div></li>
 									<?php
 								}
 							 ?>
