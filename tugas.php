@@ -39,12 +39,22 @@
  		 					<div class="col-lg-6">
  		 						<div class="todo">
  		 							<i class="fas fa-code"></i>
- 		 							<p>Project - Web Dinamis</p>
+ 		 							<h1>Project - Web Dinamis</h1>
+ 		 							<h2>14 Mei 2018</h2>
+ 		 						</div>
+ 		 					</div><!-- col-lg-6 -->
+ 		 					<div class="col-lg-6">
+ 		 						<div class="todo">
+ 		 							<i class="fab fa-java"></i>
+ 		 							<h1>Project - PBO</h1>
+ 		 							<h2>22 Mei 2018</h2>
  		 						</div>
  		 					</div><!-- col-lg-6 -->
 	 		 			</div><!-- col-lg-md-6 sm-12 -->
 	 		 			<div class="col-lg-6 col-md-6 col-sm-12">
-	 		 				
+	 		 				<form accept="todo.php" method="POST">
+	 		 					
+	 		 				</form>
 	 		 			</div><!-- col-lg-md-6 sm-12 -->
  		 			</div><!-- tugas -->
  		 		</div><!-- max-content -->

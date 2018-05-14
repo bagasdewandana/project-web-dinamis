@@ -158,7 +158,30 @@ html
 }
 
 .todo{
-	width: 50%;
-	height:	100px;
-	background-color: red;
+	width: 70%;
+	height:	170px;
+	text-align: center;
+	box-shadow: 2px 2px 10px 3px #CECECE;
+	border-radius: 5px;
+}
+
+.todo i{
+	padding: 20px;
+	text-align: center;
+	color: #E2B512;
+	font-size: 50px;
+}
+
+.todo h1{
+	color: #E2B512;
+	font-size: 17px;
+	padding: 15px;
+	font-weight: lighter;
+}
+
+.todo h2{
+	font-size: 12px;
+	color: #E2B512;
+	font-family: opensans;
+	letter-spacing: 1px;
 }
