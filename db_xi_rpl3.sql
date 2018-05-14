@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08 Mei 2018 pada 10.55
+-- Generation Time: 14 Mei 2018 pada 05.13
 -- Versi Server: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -86,44 +86,45 @@ CREATE TABLE `tb_siswa` (
   `nis_siswa` varchar(6) NOT NULL,
   `jenis_kelamin` varchar(10) NOT NULL,
   `agama_siswa` varchar(10) NOT NULL,
-  `no_telp` varchar(16) NOT NULL
+  `no_telp` varchar(16) NOT NULL,
+  `quotes` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `tb_siswa`
 --
 
-INSERT INTO `tb_siswa` (`id_siswa`, `nama_siswa`, `nis_siswa`, `jenis_kelamin`, `agama_siswa`, `no_telp`) VALUES
-(17, 'Abielevan Meidialmo', '3395', 'Laki-laki', 'Kristen Pr', '081339273049'),
-(18, 'I Wayan Prema Agus Prasetya', '3413', 'Laki-laki', 'Hindu', '087761661669'),
-(19, 'Ryan Ardito Zahwan Ragazzo', '3424', 'Laki-laki', 'Islam', '081339760178'),
-(20, 'Ahmad Yudi Prasetyo', '3397', 'Laki-laki', 'Islam', ''),
-(21, 'Apriyanto Dwi Pangestu', '3398', 'Laki-laki', 'Kristen Ka', ''),
-(22, 'Belinda Dwi Sukma Putri', '3399', 'Perempuan', 'Islam', '08873801498'),
-(23, 'Christian Jonathan Lamik', '3400', 'Laki-laki', 'Kristen Pr', ''),
-(24, 'Daniel Lusikooy', '3402', 'Laki-laki', 'Kristen Pr', ''),
-(25, 'Dea Ayu Agustina', '3403', 'Perempuan', 'Islam', '085965973999'),
-(26, 'Gede Ngurah Bagus Yudhistira Mahardiningrat', '3405', 'Laki-laki', 'Hindu', ''),
-(27, 'Gede Putu Arya Bismana Kori', '3406', 'Laki-laki', 'Hindu', ''),
-(28, 'I Gede Bagus Ngurah Aditya Dharma Giri', '3407', 'Laki-laki', 'Hindu', ''),
-(29, 'I Gede Yoga Permana Putra', '3408', 'Laki-laki', 'Hindu', ''),
-(30, 'I Kadek Dwika Umbara Jaya', '3409', 'Laki-laki', 'Hindu', ''),
-(31, 'I Komang Agus Dana Artha', '3410', 'Laki-laki', 'Hindu', ''),
-(32, 'I Nyoman Arta Gunawan', '3411', 'Laki-laki', 'Hindu', ''),
-(33, 'I Wayan Aditya Semara Putra', '3412', 'Laki-laki', 'Hindu', ''),
-(34, 'Ida Bagus Anom Mardiana', '3414', 'Laki-laki', 'Hindu', ''),
-(35, 'Ida Bagus Sari Dhananjaya', '3415', 'Laki-laki', 'Hindu', ''),
-(36, 'Indra Setyawan', '3416', 'Laki-laki', 'Hindu', ''),
-(37, 'Kadek Eric Saputra', '3417', 'Laki-laki', 'Hindu', ''),
-(38, 'Made Deva Mahayana', '3418', 'Laki-laki', 'Hindu', ''),
-(39, 'Made Putri Adhinda Rahmastra', '3419', 'Laki-laki', 'Hindu', ''),
-(40, 'Made Reksananda Surya Laksmana', '3420', 'Laki-laki', 'Hindu', ''),
-(41, 'Nyoman Andika Yogiswara', '3421', 'Laki-laki', 'Hindu', ''),
-(42, 'Putu Suputra Wahyu Harta', '3422', 'Laki-laki', 'Hindu', ''),
-(43, 'Rendi Pranoto', '3423', 'Laki-laki', 'Islam', ''),
-(45, 'Theodorus Wijaya Kusuma', '3425', 'Laki-laki', 'Kristen Ka', ''),
-(46, 'Tri Sapta Wijaya', '3426', 'Laki-laki', 'Islam', ''),
-(47, 'Wildhan Naufal Ziah', '3427', 'Laki-laki', 'Islam', '');
+INSERT INTO `tb_siswa` (`id_siswa`, `nama_siswa`, `nis_siswa`, `jenis_kelamin`, `agama_siswa`, `no_telp`, `quotes`) VALUES
+(17, 'Abielevan Meidialmo', '3395', 'Laki-laki', 'Kristen Pr', '081339273049', ''),
+(18, 'I Wayan Prema Agus Prasetya', '3413', 'Laki-laki', 'Hindu', '087761661669', ''),
+(19, 'Ryan Ardito Zahwan Ragazzo', '3424', 'Laki-laki', 'Islam', '081339760178', ''),
+(20, 'Ahmad Yudi Prasetyo', '3397', 'Laki-laki', 'Islam', '', ''),
+(21, 'Apriyanto Dwi Pangestu', '3398', 'Laki-laki', 'Kristen Ka', '', ''),
+(22, 'Belinda Dwi Sukma Putri', '3399', 'Perempuan', 'Islam', '08873801498', ''),
+(23, 'Christian Jonathan Lamik', '3400', 'Laki-laki', 'Kristen Pr', '', ''),
+(24, 'Daniel Lusikooy', '3402', 'Laki-laki', 'Kristen Pr', '', ''),
+(25, 'Dea Ayu Agustina', '3403', 'Perempuan', 'Islam', '085965973999', ''),
+(26, 'Gede Ngurah Bagus Yudhistira Mahardiningrat', '3405', 'Laki-laki', 'Hindu', '', ''),
+(27, 'Gede Putu Arya Bismana Kori', '3406', 'Laki-laki', 'Hindu', '', ''),
+(28, 'I Gede Bagus Ngurah Aditya Dharma Giri', '3407', 'Laki-laki', 'Hindu', '', ''),
+(29, 'I Gede Yoga Permana Putra', '3408', 'Laki-laki', 'Hindu', '', ''),
+(30, 'I Kadek Dwika Umbara Jaya', '3409', 'Laki-laki', 'Hindu', '', ''),
+(31, 'I Komang Agus Dana Artha', '3410', 'Laki-laki', 'Hindu', '', ''),
+(32, 'I Nyoman Arta Gunawan', '3411', 'Laki-laki', 'Hindu', '', ''),
+(33, 'I Wayan Aditya Semara Putra', '3412', 'Laki-laki', 'Hindu', '', ''),
+(34, 'Ida Bagus Anom Mardiana', '3414', 'Laki-laki', 'Hindu', '', ''),
+(35, 'Ida Bagus Sari Dhananjaya', '3415', 'Laki-laki', 'Hindu', '', ''),
+(36, 'Indra Setyawan', '3416', 'Laki-laki', 'Hindu', '', ''),
+(37, 'Kadek Eric Saputra', '3417', 'Laki-laki', 'Hindu', '', ''),
+(38, 'Made Deva Mahayana', '3418', 'Laki-laki', 'Hindu', '', ''),
+(39, 'Made Putri Adhinda Rahmastra', '3419', 'Laki-laki', 'Hindu', '', ''),
+(40, 'Made Reksananda Surya Laksmana', '3420', 'Laki-laki', 'Hindu', '', ''),
+(41, 'Nyoman Andika Yogiswara', '3421', 'Laki-laki', 'Hindu', '', ''),
+(42, 'Putu Suputra Wahyu Harta', '3422', 'Laki-laki', 'Hindu', '', ''),
+(43, 'Rendi Pranoto', '3423', 'Laki-laki', 'Islam', '', ''),
+(45, 'Theodorus Wijaya Kusuma', '3425', 'Laki-laki', 'Kristen Ka', '', ''),
+(46, 'Tri Sapta Wijaya', '3426', 'Laki-laki', 'Islam', '', ''),
+(47, 'Wildhan Naufal Ziah', '3427', 'Laki-laki', 'Islam', '', '');
 
 -- --------------------------------------------------------
 
@@ -278,7 +279,7 @@ ALTER TABLE `tb_tugas`
 -- AUTO_INCREMENT for table `tb_uangkas`
 --
 ALTER TABLE `tb_uangkas`
-  MODIFY `id_uangkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+  MODIFY `id_uangkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
