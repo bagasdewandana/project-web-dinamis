@@ -37,15 +37,13 @@
 					                <div id="wave2"></div>
 					            </div>
 					            
-<<<<<<< HEAD
 					            <div id="info" class="info<?= $no ?>">
 					                <div id="viewMore" class="viewMore<?= $no ?>"><img src="img/siswa/View%20More.png" width="70%"/></div>
-=======
 					            <div id="info">
 					                <div id="viewMore">
 					                	<a href="
 					                	admin/index.php"><img  src="img/siswa/View%20More.png" width="70%"/></a></div>
->>>>>>> 74841eac25cb7f4634489f66df15c5156ef74de4
+
 					                <div id="name"><?= $data_siswa['nama_siswa'] ?></div>
 					                <div id="status"><?= '" ' . $data_siswa['quotes'] . ' "'?></div>
 					                <div id="social">
@@ -55,7 +53,7 @@
 					                </div>
 					            </div>
 					            
-<<<<<<< HEAD
+
 					            <div id="aboutMe" class="aboutMe<?= $no ?>">
 					                <h2>ABOUT ME</h2>
 					                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -96,11 +94,6 @@
 					                    </div>
 					                </div>
 					            </div>
-=======
-					            
-					            
-					            
->>>>>>> 74841eac25cb7f4634489f66df15c5156ef74de4
 					        </div>
 				 		</div><!--col-lg-3 main-holder-->
  						<?php
@@ -190,6 +183,4 @@
     
 });
 </script>
-=======
->>>>>>> 74841eac25cb7f4634489f66df15c5156ef74de4
  </html>
