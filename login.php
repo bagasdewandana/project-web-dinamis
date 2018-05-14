@@ -1,5 +1,11 @@
 <?php 
 	require_once 'koneksi/koneksi.php';
+	if (!isset($_SESSION['user_login'])) {
+		# code...
+	}
+	else{
+		header('location: index.php');
+	}
  ?>
 
 <!DOCTYPE html>
