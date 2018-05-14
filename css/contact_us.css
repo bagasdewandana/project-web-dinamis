@@ -210,3 +210,43 @@ html
 .btn-kirim a:hover{
 	background-color: #e2b512b3;
 }
+.bg-footer{
+	margin:50px 0 0 0;
+	padding: 0;
+	width: 100%;
+}
+.footer-atas{
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+	background-color: #e2b512;
+}
+.footer-atas p{
+	padding: 5px 0;
+}
+.follow ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.follow ul li{
+	display: inline-block;
+	padding: 5px;
+}
+.follow ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.footer-bawah{
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	background-color: #d0a301;
+}
+.footer-bawah p{
+	font-size: 0.8em;
+	padding: 5px 0;
+	font-weight: 100;
+}
