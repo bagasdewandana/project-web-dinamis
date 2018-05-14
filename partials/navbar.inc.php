@@ -30,7 +30,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="col-lg-4 col-md-5">
 						<ul class="menu-kiri">
-							<li><a href="#">Beranda</a><div class="garis"></div></li>
+							<li><a href="index.php">Beranda</a><div class="garis"></div></li>
 							<li><a href="siswa.php">Siswa</a><div class="garis"></div></li>
 							<li><a href="uangkas.php">Uang Kas</a><div class="garis"></div></li>
 						</ul>
