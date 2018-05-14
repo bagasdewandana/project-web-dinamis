@@ -48,10 +48,6 @@
 					<div class="menu">
 						<ul>
 							<li><a href="?menu=index" class="<?php echo ($_GET['menu'] == 'index') ? 'active' : ''; ?>"><i class=" fa fa-dashboard"></i></a></li>
-							<li><a href="?menu=data_siswa" class="<?php echo ($_GET['menu'] == 'data_siswa') ? 'active' : ''; ?>"><i class=" fa fa-users"></i></a></li>
-							<li><a href="?menu=data_uangkas" class="<?php echo ($_GET['menu'] == 'data_uangkas') ? 'active' : ''; ?>"><i class=" fa fa-money"></i></a></li>
-							<li><a href="?menu=data_extra" class="<?php echo ($_GET['menu'] == 'data_extra') ? 'active' : ''; ?>"><i class=" fa fa-desktop"></i></a></li>
-							<li><a href="?menu=data_mapel" class="<?php echo ($_GET['menu'] == 'data_mapel') ? 'active' : ''; ?>"><i class=" fa fa-book"></i></a></li>
 						</ul>
 					</div>
 				</div>
