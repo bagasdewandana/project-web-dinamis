@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 14 Mei 2018 pada 05.13
--- Versi Server: 10.1.29-MariaDB
+-- Generation Time: May 26, 2018 at 11:33 PM
+-- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_extra`
+-- Table structure for table `tb_extra`
 --
 
 CREATE TABLE `tb_extra` (
@@ -36,7 +36,7 @@ CREATE TABLE `tb_extra` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tb_extra`
+-- Dumping data for table `tb_extra`
 --
 
 INSERT INTO `tb_extra` (`id_extra`, `nama_extra`, `pengajar_extra`, `icon_extra`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `tb_extra` (`id_extra`, `nama_extra`, `pengajar_extra`, `icon_extra`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_mapel`
+-- Table structure for table `tb_mapel`
 --
 
 CREATE TABLE `tb_mapel` (
@@ -55,7 +55,7 @@ CREATE TABLE `tb_mapel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tb_mapel`
+-- Dumping data for table `tb_mapel`
 --
 
 INSERT INTO `tb_mapel` (`id_mapel`, `nama_mapel`) VALUES
@@ -64,7 +64,7 @@ INSERT INTO `tb_mapel` (`id_mapel`, `nama_mapel`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_pengeluaran`
+-- Table structure for table `tb_pengeluaran`
 --
 
 CREATE TABLE `tb_pengeluaran` (
@@ -77,7 +77,18 @@ CREATE TABLE `tb_pengeluaran` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_siswa`
+-- Table structure for table `tb_piket`
+--
+
+CREATE TABLE `tb_piket` (
+  `id_siswa` int(11) NOT NULL,
+  `hari` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_siswa`
 --
 
 CREATE TABLE `tb_siswa` (
@@ -86,61 +97,49 @@ CREATE TABLE `tb_siswa` (
   `nis_siswa` varchar(6) NOT NULL,
   `jenis_kelamin` varchar(10) NOT NULL,
   `agama_siswa` varchar(10) NOT NULL,
-  `no_telp` varchar(16) NOT NULL,
-  `quotes` text NOT NULL
+  `no_telp` varchar(16) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tb_siswa`
+-- Dumping data for table `tb_siswa`
 --
 
-INSERT INTO `tb_siswa` (`id_siswa`, `nama_siswa`, `nis_siswa`, `jenis_kelamin`, `agama_siswa`, `no_telp`, `quotes`) VALUES
-(17, 'Abielevan Meidialmo', '3395', 'Laki-laki', 'Kristen Pr', '081339273049', ''),
-(18, 'I Wayan Prema Agus Prasetya', '3413', 'Laki-laki', 'Hindu', '087761661669', ''),
-(19, 'Ryan Ardito Zahwan Ragazzo', '3424', 'Laki-laki', 'Islam', '081339760178', ''),
-(20, 'Ahmad Yudi Prasetyo', '3397', 'Laki-laki', 'Islam', '', ''),
-(21, 'Apriyanto Dwi Pangestu', '3398', 'Laki-laki', 'Kristen Ka', '', ''),
-(22, 'Belinda Dwi Sukma Putri', '3399', 'Perempuan', 'Islam', '08873801498', ''),
-(23, 'Christian Jonathan Lamik', '3400', 'Laki-laki', 'Kristen Pr', '', ''),
-(24, 'Daniel Lusikooy', '3402', 'Laki-laki', 'Kristen Pr', '', ''),
-(25, 'Dea Ayu Agustina', '3403', 'Perempuan', 'Islam', '085965973999', ''),
-(26, 'Gede Ngurah Bagus Yudhistira Mahardiningrat', '3405', 'Laki-laki', 'Hindu', '', ''),
-(27, 'Gede Putu Arya Bismana Kori', '3406', 'Laki-laki', 'Hindu', '', ''),
-(28, 'I Gede Bagus Ngurah Aditya Dharma Giri', '3407', 'Laki-laki', 'Hindu', '', ''),
-(29, 'I Gede Yoga Permana Putra', '3408', 'Laki-laki', 'Hindu', '', ''),
-(30, 'I Kadek Dwika Umbara Jaya', '3409', 'Laki-laki', 'Hindu', '', ''),
-(31, 'I Komang Agus Dana Artha', '3410', 'Laki-laki', 'Hindu', '', ''),
-(32, 'I Nyoman Arta Gunawan', '3411', 'Laki-laki', 'Hindu', '', ''),
-(33, 'I Wayan Aditya Semara Putra', '3412', 'Laki-laki', 'Hindu', '', ''),
-(34, 'Ida Bagus Anom Mardiana', '3414', 'Laki-laki', 'Hindu', '', ''),
-(35, 'Ida Bagus Sari Dhananjaya', '3415', 'Laki-laki', 'Hindu', '', ''),
-(36, 'Indra Setyawan', '3416', 'Laki-laki', 'Hindu', '', ''),
-(37, 'Kadek Eric Saputra', '3417', 'Laki-laki', 'Hindu', '', ''),
-(38, 'Made Deva Mahayana', '3418', 'Laki-laki', 'Hindu', '', ''),
-(39, 'Made Putri Adhinda Rahmastra', '3419', 'Laki-laki', 'Hindu', '', ''),
-(40, 'Made Reksananda Surya Laksmana', '3420', 'Laki-laki', 'Hindu', '', ''),
-(41, 'Nyoman Andika Yogiswara', '3421', 'Laki-laki', 'Hindu', '', ''),
-(42, 'Putu Suputra Wahyu Harta', '3422', 'Laki-laki', 'Hindu', '', ''),
-(43, 'Rendi Pranoto', '3423', 'Laki-laki', 'Islam', '', ''),
-(45, 'Theodorus Wijaya Kusuma', '3425', 'Laki-laki', 'Kristen Ka', '', ''),
-(46, 'Tri Sapta Wijaya', '3426', 'Laki-laki', 'Islam', '', ''),
-(47, 'Wildhan Naufal Ziah', '3427', 'Laki-laki', 'Islam', '', '');
+INSERT INTO `tb_siswa` (`id_siswa`, `nama_siswa`, `nis_siswa`, `jenis_kelamin`, `agama_siswa`, `no_telp`) VALUES
+(17, 'Abielevan Meidialmo', '3395', 'Laki-laki', 'Kristen Pr', '081339273049'),
+(18, 'I Wayan Prema Agus Prasetya', '3413', 'Laki-laki', 'Hindu', '087761661669'),
+(19, 'Ryan Ardito Zahwan Ragazzo', '3424', 'Laki-laki', 'Islam', '081339760178'),
+(20, 'Ahmad Yudi Prasetyo', '3397', 'Laki-laki', 'Islam', ''),
+(21, 'Apriyanto Dwi Pangestu', '3398', 'Laki-laki', 'Kristen Ka', ''),
+(22, 'Belinda Dwi Sukma Putri', '3399', 'Perempuan', 'Islam', '08873801498'),
+(23, 'Christian Jonathan Lamik', '3400', 'Laki-laki', 'Kristen Pr', ''),
+(24, 'Daniel Lusikooy', '3402', 'Laki-laki', 'Kristen Pr', ''),
+(25, 'Dea Ayu Agustina', '3403', 'Perempuan', 'Islam', '085965973999'),
+(26, 'Gede Ngurah Bagus Yudhistira Mahardiningrat', '3405', 'Laki-laki', 'Hindu', ''),
+(27, 'Gede Putu Arya Bismana Kori', '3406', 'Laki-laki', 'Hindu', ''),
+(28, 'I Gede Bagus Ngurah Aditya Dharma Giri', '3407', 'Laki-laki', 'Hindu', ''),
+(29, 'I Gede Yoga Permana Putra', '3408', 'Laki-laki', 'Hindu', ''),
+(30, 'I Kadek Dwika Umbara Jaya', '3409', 'Laki-laki', 'Hindu', ''),
+(31, 'I Komang Agus Dana Artha', '3410', 'Laki-laki', 'Hindu', ''),
+(32, 'I Nyoman Arta Gunawan', '3411', 'Laki-laki', 'Hindu', ''),
+(33, 'I Wayan Adiya Semara Putra', '3412', 'Laki-laki', 'Hindu', ''),
+(34, 'Ida Bagus Anom Mardiana', '3414', 'Laki-laki', 'Hindu', ''),
+(35, 'Ida Bagus Sari Dhananjaya', '3415', 'Laki-laki', 'Hindu', ''),
+(36, 'Indra Setyawan', '3416', 'Laki-laki', 'Hindu', ''),
+(37, 'Kadek Eric Saputra', '3417', 'Laki-laki', 'Hindu', ''),
+(38, 'Made Deva Mahayana', '3418', 'Laki-laki', 'Hindu', ''),
+(39, 'Made Putri Adhinda Rahmastra', '3419', 'Laki-laki', 'Hindu', ''),
+(40, 'Made Reksananda Surya Laksmana', '3420', 'Laki-laki', 'Hindu', ''),
+(41, 'Nyoman Andika Yogiswara', '3421', 'Laki-laki', 'Hindu', ''),
+(42, 'Putu Suputra Wahyu Harta', '3422', 'Laki-laki', 'Hindu', ''),
+(43, 'Rendi Pranoto', '3423', 'Laki-laki', 'Islam', ''),
+(45, 'Theodorus Wijaya Kusuma', '3425', 'Laki-laki', 'Kristen Ka', ''),
+(46, 'Tri Sapta Wijaya', '3426', 'Laki-laki', 'Islam', ''),
+(47, 'Wildhan Naufal Ziah', '3427', 'Laki-laki', 'Islam', '');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_tugas`
---
-
-CREATE TABLE `tb_tugas` (
-  `id_tugas` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tb_uangkas`
+-- Table structure for table `tb_uangkas`
 --
 
 CREATE TABLE `tb_uangkas` (
@@ -152,26 +151,19 @@ CREATE TABLE `tb_uangkas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tb_uangkas`
+-- Dumping data for table `tb_uangkas`
 --
 
 INSERT INTO `tb_uangkas` (`id_uangkas`, `id_siswa`, `id_bulan`, `jumlah`, `date_uangkas`) VALUES
-(109, 19, 5, 10000, '2018-05-07 13:56:02'),
-(110, 47, 5, 10000, '2018-05-07 13:56:14'),
-(111, 43, 5, 10000, '2018-05-07 15:39:19'),
-(112, 18, 5, 10000, '2018-05-08 14:09:47'),
-(113, 20, 5, 10000, '2018-05-08 14:11:46'),
-(114, 36, 5, 10000, '2018-05-08 14:12:03'),
-(115, 46, 5, 10000, '2018-05-08 14:12:19'),
-(116, 34, 5, 10000, '2018-05-08 14:12:50'),
-(117, 23, 5, 10000, '2018-05-08 14:13:05'),
-(118, 22, 5, 10000, '2018-05-08 14:15:30'),
-(119, 38, 5, 10000, '2018-05-08 14:16:10');
+(1, 17, 5, 10000, '2018-05-14 10:20:49'),
+(2, 18, 5, 10000, '2018-05-14 10:21:07'),
+(3, 19, 5, 10000, '2018-05-14 10:21:08'),
+(4, 20, 5, 10000, '2018-05-14 10:21:09');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_user`
+-- Table structure for table `tb_user`
 --
 
 CREATE TABLE `tb_user` (
@@ -183,7 +175,7 @@ CREATE TABLE `tb_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tb_user`
+-- Dumping data for table `tb_user`
 --
 
 INSERT INTO `tb_user` (`id_user`, `email_user`, `username`, `password`, `level_user`) VALUES
@@ -192,8 +184,7 @@ INSERT INTO `tb_user` (`id_user`, `email_user`, `username`, `password`, `level_u
 (5, 'devamahayanatop@gmail.com', 'devamahayana', '$2y$11$W5LqUhSVd9DpVv3Zp/1TfeDyrb.MXQlsxFuLCg0bfK9w7ivzaS2fS', 'Admin'),
 (6, 'wayanadityasemaraputra@gmail.com', 'adityasemaraputra', '$2y$11$vicbeM7IALlYmzBlEhWryulA65hnJgRE.HcVydLIuh72Cw4B9hkNW', 'Admin'),
 (7, 'deaayuagstn@yahoo.com', 'deaayuagstn', '$2y$11$CldGxq83O7W7341itWgQz.Iei5oZfw.QGHPtN8IA.UK1oeXXIwPGi', 'Admin'),
-(8, 'putriadhinda10@gmail.com', 'adhinda.rh', '$2y$11$RSZvHRIBFJjNpi1YxmNN4uT0NCtCWe3KjJ78z22XeA7Cl/KU0ZQLu', 'Admin'),
-(9, 'ryanardito25@gmail.com', 'Ragazzo', '$2y$11$uYMxObUv/gSw.eJYvPzrkOgmhf977EFy8VU3cHX2KQnUntb4DudxG', 'Member');
+(8, 'putriadhinda10@gmail.com', 'adhinda.rh', '$2y$11$RSZvHRIBFJjNpi1YxmNN4uT0NCtCWe3KjJ78z22XeA7Cl/KU0ZQLu', 'Admin');
 
 --
 -- Indexes for dumped tables
@@ -222,12 +213,6 @@ ALTER TABLE `tb_pengeluaran`
 --
 ALTER TABLE `tb_siswa`
   ADD PRIMARY KEY (`id_siswa`);
-
---
--- Indexes for table `tb_tugas`
---
-ALTER TABLE `tb_tugas`
-  ADD PRIMARY KEY (`id_tugas`);
 
 --
 -- Indexes for table `tb_uangkas`
@@ -270,22 +255,16 @@ ALTER TABLE `tb_siswa`
   MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
--- AUTO_INCREMENT for table `tb_tugas`
---
-ALTER TABLE `tb_tugas`
-  MODIFY `id_tugas` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `tb_uangkas`
 --
 ALTER TABLE `tb_uangkas`
-  MODIFY `id_uangkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
+  MODIFY `id_uangkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

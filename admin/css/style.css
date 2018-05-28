@@ -397,3 +397,47 @@ hr{
 	text-decoration: none;
 	line-height: 50px;
 }
+
+.jml_siswa{
+	height: 150px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+}
+
+.card-left{
+	height: 100%;
+	background: linear-gradient(45deg, #ffb347, #ffcc33);
+	border-radius: 5px 0 0 5px;
+}
+
+.card-left{
+	text-align: center;
+}
+
+.card-left i{
+	font-size: 52.5px;
+	line-height: 150px;
+	color: white;
+}
+.card-right
+{
+	height: 100%;
+	text-align: center;
+}
+
+.card-right h1{
+	font-size: 36px;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
+.card-right p{
+	margin: 0;
+}
+
+.uangkas
+{
+	font-size: 25px !important;
+	margin-top: 50px !important;
+}
