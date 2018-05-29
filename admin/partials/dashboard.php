@@ -29,7 +29,7 @@
 			<i class="fa fa-money"></i>
 		</div>
 		<div class="col-md-7 card-right">
-			<h1 class="uangkas">Rp. <?= $uangkas ?></h1>
+			<h1 class="uangkas">Rp. <?= number_format($uangkas) ?></h1>
 			<p>Total Uangkas</p>
 		</div>
 	</div>

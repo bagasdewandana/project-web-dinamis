@@ -59,6 +59,10 @@
 											<label>Ulang Password</label>
 											<input type="password" name="repeat_password" placeholder="Tulis password kamu disini" required>
 										</div>
+										<div class="form-control">
+											<label>Kode Verifikasi</label>
+											<input type="text" name="code_verify" placeholder="Verifikasikan Dirimu" required>
+										</div>
 										<a>
 											<button id="btnMulai" type="submit" name="btn_submit">Register
 							                  <span>
@@ -73,19 +77,26 @@
 												$username = $koneksi->real_escape_string($_POST['username']);
 												$password = $koneksi->real_escape_string($_POST['password']);
 												$repeat_password = $koneksi->real_escape_string($_POST['repeat_password']);
+												$input_verify = $koneksi->real_escape_string($_POST['code_verify']);
+												$code_verify = "repaltikuad";
 
 												$query_check = $koneksi->query("SELECT * FROM tb_user WHERE email_user='$email_user'");
 												if ($query_check->num_rows == 0) {
 													$query_check = $koneksi->query("SELECT * FROM tb_user WHERE username = '$username'");
 													if ($query_check->num_rows == 0) {
 														if ($password == $repeat_password) {
-															$password_hash = password_hash($password, PASSWORD_BCRYPT, array('cost'=>11));
-															$query_add = $koneksi->query("INSERT INTO tb_user VALUES (NULL, '$email_user', '$username', '$password_hash', 'Member')");
-															if ($query_add) {
-																echo "<script>alert('Berhasil Membuat Akun');location.href='login.php'</script>";
+															if ($input_verify == $code_verify) {
+																$password_hash = password_hash($password, PASSWORD_BCRYPT, array('cost'=>11));
+																$query_add = $koneksi->query("INSERT INTO tb_user VALUES (NULL, '$email_user', '$username', '$password_hash', 'Member')");
+																if ($query_add) {
+																	echo "<script>alert('Berhasil Membuat Akun');location.href='login.php'</script>";
+																}
+																else{
+																	echo "<script>alert('Gagal Membuat Akun')</script>";
+																}
 															}
 															else{
-																echo "<script>alert('Gagal Membuat Akun')</script>";
+																echo "<script>alert('Kode Verifikasi salah!')</script>";
 															}
 														}
 														else{
