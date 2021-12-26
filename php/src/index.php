@@ -7,25 +7,25 @@
   <head>
     <meta charset="utf-8">
     <title>Repalti</title>
-    <link rel="icon" href="img/31.png">
+    <link rel="icon" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fimages%2F31.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css?v=0.1" type="text/css">
-    <link rel="stylesheet" href="fontawesome/font-css/css/fontawesome.css">
-    <link rel="stylesheet" href="fontawesome/font-css/css/fontawesome.min.css">
-    <link rel="stylesheet" href="fontawesome/font-css/css/fa-solid.css">
-    <link rel="stylesheet" href="fontawesome/font-css/css/fa-solid.min.css">
-    <link rel="stylesheet" href="fontawesome/font-css/css/fa-regular.css">
-    <link rel="stylesheet" href="fontawesome/font-css/css/fa-regular.min.css">
-    <link rel="stylesheet" href="fontawesome/font-css/css/fa-brands.css">
-    <link rel="stylesheet" href="fontawesome/font-css/css/fa-brands.min.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fstyle.css" type="text/css">
+    <link rel="stylesheet" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Ffontawesome.css">
+    <link rel="stylesheet" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Ffontawesome.min.css">
+    <link rel="stylesheet" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Ffa-solid.css">
+    <link rel="stylesheet" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Ffa-solid.min.css">
+    <link rel="stylesheet" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Ffa-regular.css">
+    <link rel="stylesheet" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Ffa-regular.min.css">
+    <link rel="stylesheet" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Ffa-brands.css">
+    <link rel="stylesheet" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Ffa-brands.min.css">
+    <link rel="stylesheet" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fanimations.css">
+    <link rel="stylesheet" type="text/css" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fnavbar.css">
+    <link rel="stylesheet" type="text/css" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Ffont-awesome.css">
 
-    <link rel="stylesheet" type="text/css" href="./css/contact_us.css">
-    <script src="js/jquery-3.2.1.min.js"> </script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/JQUERY%20Main.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fcontact_us.css">
+    <script src="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fjs%2Fjquery-3.2.1.min.js"> </script>
+    <script src="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fjs%2Fjquery-3.2.1.min.js"></script>
+    <script src="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fjs%2FJQUERY%20Main.js"></script>
   </head>
 
   <body>
@@ -42,7 +42,7 @@
             <div class="hero">
 
               <div class="col-lg-6 col-md-12 col-sm-12">
-                <img class="black" src="img/3-black.png">
+                <img class="black" src="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fimages%2F3-black.png">
                 <h2>Barbaric people is here mate !</h2>
                 <p>Ingin mengetahui REPALTI lebih jauh ?</p>
                 <a href="#" id="btnMulai">Mulai
@@ -53,7 +53,7 @@
               </div><!-- col-lg-6 -->
 
               <div class="col-lg-6 col-md-12 col-sm-12">
-                <img class="gif" src="img/focus.gif">
+                <img class="gif" src="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fimages%2Ffocus.gif">
               </div><!-- col-lg-6 -->
 
             </div><!-- hero -->
@@ -113,7 +113,7 @@
               <h1 class="animated bounceInDown">XI RPL 3</h1>
               <div class="col-lg-6 col-md-12 col-sm-12 animatedParent">
                 <div class="siswa">
-                  <img src="img/siswa.png" class="animated bounceInLeft">
+                  <img src="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fimages%2Fsiswa.png" class="animated bounceInLeft">
                 </div>             
                 <h2>Jumlah Siswa</h2>
                 <hr>
@@ -123,7 +123,7 @@
               </div><!-- col-lg-6 -->
               <div class="col-lg-6 col-md-12 col-sm-12 animatedParent">
                 <div class="siswa">
-                  <img src="img/guru.png" class="animated bounceInRight">
+                  <img src="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fimages%2Fguru.png" class="animated bounceInRight">
                 </div>             
                 <h2>Wali Kelas</h2>
                 <hr>   
@@ -141,7 +141,7 @@
             <div class="col-lg-6">
               <div class="bg-content-kiri">
                 <div class="bg-gambar">
-                  <img src="img/mail.png">
+                  <img src="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fimages%2Fmail.png">
                 </div>
               </div>
             </div>
@@ -257,9 +257,8 @@
       });
     </script>
 
-    <script type="text/javascript" src="css3-animate-it-master/js/css3-animate-it.js"></script>
-    <script type="text/javascript" src="js/count.js"></script>
+    <script type="text/javascript" src="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fjs%2Fcss3-animate-it.js"></script>
+    <script type="text/javascript" src="https://objectstorage.ap-melbourne-1.oraclecloud.com/n/axpqcww3m6d4/b/UAS-20211224-1034/o/css%2Fjs%2Fcount.js"></script>
   </body>
 
 </html>
-  
